@@ -1,0 +1,18 @@
+# deps
+node_modules/
+
+# build / gerados pelo stencil
+www/
+dist/
+loader/
+.stencil/
+*.log
+
+# editor / os
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# scaffolding / referencia Builder.io (nao faz parte do site publicado)
+_builder-reference/

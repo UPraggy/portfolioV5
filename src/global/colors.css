@@ -1,0 +1,34 @@
+:host{
+    --blueDark3-home-color: #0B1215;
+    /* --blueDark2-home-color: #1A2533;  */
+    --blueDark1-home-color: #091920;
+    --blueDark2-home-color: #0f2543;
+    --whiteBone-home-color: #FAF9F6;
+    --blueFont-color: #2F3651;
+    --bluegray-color: #3C3D50;
+    --blueLinkedIn-color: #3357CC;
+    --purpleBorder-color: #A259FF;
+    --purple-gradientDark1-color: #20162D;
+    --purple-gradientDark2-color: #323236;
+    --blueCian-light-color: #A9DBEF;
+    --blueCian-dark-color: #2F3651;
+    --blueGreen-light-color: #33CCAD;
+
+
+    --white-color: #FFFFFF;
+    --yellowGold-color: #EEB600;
+    --shdow-blue-bg: #34353A;
+    --shdow-gray-bg : #5d6069;
+    --shwdow-grayHblt-color: #535560;
+    --gray-rodape: #63686C;
+    --shdow-red-color: #F22A4E;
+    --shdow-brownRed-color: #7D5C5C;
+    --shdow-brown-color: #382d00;
+    --shwdow-grayHbltMid-color: #1e1e21;
+
+
+    --red-border-shadow-color: #AA0415;
+    --hearth-color1: #FB6A78;
+    --hearth-color2: #F9394C;
+    --hearth-color3: #F70820;
+}

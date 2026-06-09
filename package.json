@@ -1,0 +1,17 @@
+{
+  "name": "rafaelmr-portfoliov5",
+  "version": "5.0.0",
+  "description": "Rafael Moreira Ramos · Portfolio v5 — Stencil (bilingue, prerender)",
+  "private": true,
+  "scripts": {
+    "build": "stencil build --prerender",
+    "build.spa": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@stencil/core": "^4.20.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,36 @@
+# Rafael Moreira Ramos de Rezende
+
+> AI Developer & Fullstack Engineer baseado em Belo Horizonte (BR). Criador do LEDGB
+> Orchestrator, um agente de desenvolvimento autonomo. Trabalha com Stencil, Node.js,
+> React e integracao de modelos de IA. Portfolio bilingue (PT/EN).
+
+## Quem e
+
+- Nome: Rafael Moreira Ramos de Rezende
+- Atua como: AI Developer & Fullstack Engineer
+- Local: Belo Horizonte, Minas Gerais, Brasil (GMT-3)
+- Username: UPraggy
+
+## Projeto principal
+
+- LEDGB Orchestrator: IDE/agente autonomo de desenvolvimento. Orquestra tarefas de
+  codigo de ponta a ponta com modelos de IA.
+
+## Stack
+
+- Linguagens/runtime: Node.js, JavaScript, React (JSX), Stencil (Web Components)
+- IA: integracao com LLMs, agentes autonomos, ferramentas de orquestracao
+- Padrao: ESM, drivers nativos (pg / mongo), express, ws, openai
+
+## Links
+
+- Site: https://rafaelmr.com.br/
+- GitHub: https://github.com/UPraggy
+- LinkedIn: https://linkedin.com/in/rafaelmrdev
+- YouTube: https://youtube.com/@RafaelMRDev
+- Email: rafaelmoreira2001ofc@gmail.com
+
+## Idiomas
+
+- Portugues (pt-BR): https://rafaelmr.com.br/
+- Ingles (en): https://rafaelmr.com.br/en/

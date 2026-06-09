@@ -1,0 +1,365 @@
+:host {
+  display: block;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.TayPageTempo{
+    position: relative;
+    background: #E1B2B7;
+
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    font-size: 1.3em;
+    color: var(--white-color);
+
+    overflow: hidden;
+    text-align: center;
+
+
+        display: flex;
+        flex: 1 1;
+        flex-direction: column;
+        align-items: flex-start;
+    z-index: 30;
+
+}
+
+
+
+.TayPageTempo .title{
+    position: relative;
+    z-index: 30;
+    width: 65%;
+    font-family: 'AlexBrush-Regular', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0px auto 0 auto;
+    color: #FFFFFF;
+    text-shadow: 2px 0 var(--red-border-shadow-color), -2px 0 var(--red-border-shadow-color), 
+    0 2px var(--red-border-shadow-color), 0 -2px var(--red-border-shadow-color),
+             1px 1px var(--red-border-shadow-color), -1px -1px var(--red-border-shadow-color), 
+             1px -1px var(--red-border-shadow-color), -1px 1px var(--red-border-shadow-color);
+
+    transition: 1s;
+    transform: translateY(300%);
+    opacity: 0;
+}
+
+.TayPageTempo .titleTop.animaText{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+.TayPageTempo .title{
+    font-family: 'Sheepman-Bold', sans-serif;
+    font-weight: 700;
+    width: 65%;
+    margin: 30px auto 0 auto;
+
+transition: 1s;
+transform: translateY(300%);
+opacity: 0;
+position: relative;
+    z-index: 34;
+}
+
+.TayPageTempo .title.animaText{
+transform: translateY(0%);
+opacity: 1;
+position: relative;
+}
+
+
+.TayPageTempo .subtext{
+    width: 65%;
+    font-family: 'Nephilm', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 30;
+}
+
+.TayPageTempo .subtitle{
+    width: 65%;
+    font-family: 'AlexBrush-Regular', sans-serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    color: #FF0066;
+}
+
+
+.TayPageTempo .subtitle.conheceu{
+    margin: 0px auto 0 auto;
+    color: #0385E2;
+}
+
+/* SLIDER */
+.TayPageTempo .leftContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 522px;
+    margin: 40px 0 20px 0;
+
+    transition: 2s;
+    transform: scale(0);
+    /* opacity: 0; */
+    position: relative;
+    z-index: 30;
+}
+    
+.TayPageTempo .leftContainer.animaText{
+    transform: scale(1);
+    opacity: 1;
+}
+    
+
+.TayPageTempo .imageSlider{
+    width: 63%;
+    aspect-ratio: 1 / 2.2;
+    background: var(--imageTay) no-repeat center / cover;
+    border: 5px solid #F37272;
+    border-radius: 5px;
+}
+
+.TayPageTempo .buttonsSlider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.TayPageTempo .temporizador{
+    display: flex;
+    width: 65%;
+    justify-content: space-evenly;
+    margin: 30px auto 50px auto
+}
+
+
+.TayPageTempo .temporizador .countBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.TayPageTempo .temporizador .countBox > div:nth-child(1){
+    font-family: "Roboto Serif", serif;
+    font-weight: 500;
+}
+
+.TayPageTempo .temporizador .countBox > div:nth-child(2){
+    color: #FF0066;
+    font-family: 'AlexBrush-Regular', sans-serif;
+    font-weight: 500;
+}
+
+.TayPageTempo .temporizador.conheceu .countBox > div:nth-child(2){
+    color: #0385E2;
+}
+
+
+
+/* BUTTON INTRO */
+.TayPageTempo.introBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TayPageTempo .textoIntroBtn{
+    width: 130px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px 50px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    transition: 2s transform;
+
+    color: #FF0066;
+    font-family: 'Nephilm', sans-serif;
+}
+
+
+.TayPageTempo .heartsInitial{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.TayPageTempo .heartsInitial .heart{
+    transition: 2.5s transform;
+    transform: scale(0) rotate(0);
+}
+
+.TayPageTempo .heart{
+    position: absolute;
+    width: var(--hearth-size);
+    aspect-ratio: 1/1;
+    background-color: var(--hearth-colorTMP);
+    top: var(--topPos);
+    left: var(--leftPos);
+    z-index: 20;
+}
+
+.TayPageTempo .heart::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--hearth-colorTMP);
+}
+
+.TayPageTempo .heart::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--hearth-colorTMP);
+}
+
+.TayPageTempo .heartsInitial.animaText .heart{
+    transform: scale(1) rotate(var(--hearth-rotate));
+}
+
+
+
+/* TEXT PORQUE AMAR */
+.TayPageTempo .porqueamar{
+
+}
+
+
+.TayPageTempo .titlePq{
+    font-size: 2em;
+    font-family: 'AlexBrush-Regular', sans-serif;
+    font-weight: 500;
+}
+
+.TayPageTempo .proximo{
+    font-family: "Roboto Serif", serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    user-select: none;
+}
+
+.TayPageTempo .fraseAleatoria{
+    margin: 15px auto;
+    font-weight: 700;
+    width: 90%;
+    font-family: 'Sheepman-Bold', sans-serif;
+    color: var(--red-border-shadow-color);
+}
+
+
+
+
+
+
+/* SKY PHOTO */
+.TayPageTempo .skyImageEncontros{
+
+}
+
+
+.TayPageTempo .skyImageEncontros .titleSy{
+    font-family: 'Sheepman-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 30px 0 20px 0;
+    color: var(--red-border-shadow-color);
+}
+.TayPageTempo .skyImageEncontros .skyimg{
+    width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: url('/portifoliov4/static/imgs/taynaraContador/skyintheDate1808.png') no-repeat center / cover;
+    margin: 0 auto 70px auto;
+  /* rotação inicial não é necessária */
+  animation: girarDevagar 60s linear infinite; /* 60 segundos = bem devagar */
+}
+
+/* Animação de rotação */
+@keyframes girarDevagar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* SPOTY */
+
+.TayPageTempo .IframeSpoty{
+    
+}
+@media (max-width: 767px){
+    .TayPageTempo .titleTop{
+        width: 90%;
+    }
+    
+    .TayPageTempo .title{
+        width: 85%;
+    }
+
+    .TayPageTempo .subtext{
+        width: 80%;
+    }
+
+    .TayPageTempo .temporizador{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 0 20px 20px 20px;
+        width: 85%;
+        justify-content: center;
+    }
+
+
+    .TayPageTempo .temporizador .countBox{
+        margin-bottom:  30px;
+        font-size: 1.5em;
+    }
+
+}
