@@ -637,18 +637,25 @@ section.sect + section.sect { border-top: 1px solid var(--hairline); }
 
 /* Phone (≤480) ───────────────────────────────────────────────── */
 @media (max-width: 480px) {
-  :root { --pad: 16px; }
+  /* mais respiro lateral: 20px da borda em vez de 16px (serif grande nao encosta) */
+  :root { --pad: 20px; }
 
-  .topbar-inner { padding: 8px 14px; }
+  .topbar-inner { padding: 10px 16px; }
   .brand { gap: 8px; }
 
-  .hero { padding: 40px 0 32px; }
-  .hero h1 { font-size: clamp(36px, 14vw, 56px); }
-  .hero-stats { grid-template-columns: 1fr; gap: 14px; }
+  /* mais ar no topo do hero e ritmo vertical das stats */
+  .hero { padding: 48px 0 40px; }
+  .hero h1 { font-size: clamp(36px, 14vw, 56px); margin-bottom: 24px; }
+  .hero-meta { margin-bottom: 30px; }
+  .hero-grid { gap: 26px; margin-top: 30px; }
+  .hero-stats { grid-template-columns: 1fr; gap: 18px; }
 
-  section.sect { padding: 40px 0; }
+  /* secoes com mais espaco vertical e cabecalho mais solto */
+  section.sect { padding: 48px 0; }
+  .sect-head { margin-bottom: 28px; }
   .sect-head h2 { font-size: clamp(28px, 8vw, 36px); }
 
+  .contact { padding: 56px 0 36px; }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-h { font-size: clamp(36px, 14vw, 52px); }
 
