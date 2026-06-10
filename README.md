@@ -1,90 +1,63 @@
-# Rafael MR · Portfolio V5 — Stencil port
+# Rafael MR · Portfolio V5
 
-Port do portfólio V5 (que vive em `../index.html` como prototype React) para Stencil + Web Components — pra plugar no seu setup do V4 (`rafaelmr.com.br`).
+Portfólio pessoal do **Rafael Moreira Ramos de Rezende** — Dev Full Stack.
+Construído com **Stencil** (Web Components), **bilíngue PT/EN**, pré-renderizado
+(HTML estático crawlável) e otimizado para descoberta por buscadores e por IA
+(JSON-LD `schema.org/Person`, OpenGraph, hreflang, `robots.txt` para crawlers de
+LLM, `sitemap.xml`, `llms.txt`).
 
-## Estrutura
+🔗 **Produção:** https://rafaelmr.com.br/ · 🇬🇧 https://rafaelmr.com.br/en/
 
+> Continuação do [portfólio V4](https://github.com/UPraggy/portifioliov4) — mesma
+> identidade visual (espresso + amber), mesma família de fontes e logo. O V5 também
+> reúne a página extra **NossoAmor** (`/nossoamor/`), portada fiel do V4.
+
+## Stack
+- `@stencil/core` ^4 — componentes em light DOM (texto indexável pela máquina)
+- Fonte única de i18n/conteúdo: `src/utils/data.ts`
+- Pré-render: `stencil build --prerender` + `prerender.config.ts`
+- Deploy: GitHub Pages via GitHub Actions (`.github/workflows/pages.yml`)
+- Sem libs externas no runtime — reveal-on-scroll, command palette e terminal são vanilla
+
+## Estrutura (na raiz do repo)
 ```
-stencil/
-├── stencil.config.ts
-├── package.json
-├── tsconfig.json
-└── src/
-    ├── index.html                          ← entry de dev (stencil serve)
-    ├── global/
-    │   ├── app.ts                          ← bootstrap (set data-accent inicial)
-    │   └── styles.css                      ← TODOS os estilos (global, sem shadow DOM)
-    ├── assets/
-    │   ├── ledgb-logo.png
-    │   └── ledgb-home.png
-    ├── utils/
-    │   ├── data.ts                         ← conteúdo + tipos (Project, Lang, etc.)
-    │   └── utils.ts                        ← attachReveal, copyToClipboard
-    └── components/
-        ├── app-portfolio/                  ← raiz · gerencia lang, accent, Cmd+K, toast
-        ├── portfolio-topbar/
-        ├── portfolio-hero/
-        ├── portfolio-sect-head/            ← shared section header
-        ├── portfolio-manifesto/
-        ├── portfolio-stack/
-        ├── portfolio-ledgb/                ← feature card com logo + screenshot
-        ├── portfolio-terminal/             ← terminal animado dentro do LEDGB
-        ├── portfolio-projects/
-        ├── portfolio-trajectory/
-        ├── portfolio-communication/
-        ├── portfolio-contact/
-        └── portfolio-cmdk/                 ← command palette ⌘K
+stencil.config.ts          ← config (namespace, baseUrl, copy targets, prerender)
+prerender.config.ts        ← gera / (pt) e /en/ + sitemap
+package.json · tsconfig.json
+src/
+├── index.html             ← host pt (raiz). Prerender também gera www/en/index.html
+├── nossoamor.html         ← host da página da Tay → /nossoamor/ (noindex)
+├── CNAME · llms.txt
+├── global/                ← app.ts, styles.css (portfolio) + colors.css/fonts.css (NossoAmor)
+├── assets/                ← imagens (logo/screenshot LEDGB)
+├── static/                ← assets da NossoAmor (fotos/áudio/fontes) → www/portifoliov4/static/
+├── utils/                 ← data.ts (textos PT/EN, projetos, timeline) + utils.ts
+└── components/
+    ├── app-portfolio/     ← raiz · idioma por URL, accent, Cmd+K, toast
+    ├── portfolio-*        ← seções (topbar, hero, manifesto, stack, ledgb, terminal,
+    │                         projects, trajectory, communication, contact, cmdk)
+    └── my-taypage/        ← página NossoAmor (pessoal, portada do V4)
 ```
+
+## Rodar local
+```bash
+npm install
+npm start            # dev server com watch (http://localhost:3333)
+npm run build        # build de produção + prerender -> www/
+npx serve www        # servir o build estático localmente
+```
+
+## Deploy
+Build automático no push para `main` → publica `www/` no GitHub Pages.
+Passos manuais (DNS + Pages Source) e detalhes em **[BUILD.md](./BUILD.md)**.
+
+## Idiomas
+PT em `/` · EN em `/en/`. Toggle na topbar; detecção por path no `componentWillLoad`.
 
 ## Decisões de design
-
-- **`shadow: false` em todos os componentes.** O CSS é global (`src/global/styles.css`) e cascateia pra todos. Isso casa com o jeito que o V4 já trabalha — sem ter que duplicar variáveis CSS dentro de cada shadow root.
-- **Tag names em `portfolio-*`** exceto a raiz (`app-portfolio`) — namespace claro pra não colidir com nada que você já tenha no V4.
-- **TypeScript só onde Stencil obriga.** A regra do `DevProfile.md` de "JSX puro, NUNCA TypeScript" continua valendo no backend e em outros frontends — Stencil exige TS por baixo, então aqui é exceção pelo framework, não por gosto.
-- **Sem libs externas.** Só `@stencil/core`. Tudo (reveal-on-scroll, command palette, terminal animado) é vanilla.
-
-## Como rodar
-
-```bash
-cd stencil
-npm install
-npm start
-```
-
-Stencil sobe um dev server em `http://localhost:3333` com hot reload.
-
-## Como plugar no V4
-
-Tem dois caminhos:
-
-### Opção 1 — substituir o V4
-
-Copia `stencil/src/` por cima do `src/` do V4. Mantém o `stencil.config.ts` do V4 se você já configurou outputTargets de produção (CDN, S3, etc.).
-
-### Opção 2 — manter V4 e V5 lado a lado (recomendado pra transição)
-
-1. Copia os componentes `portfolio-*` pra `src/components/` do V4.
-2. Copia `utils/data.ts` e `utils/utils.ts`.
-3. Append `global/styles.css` no global do V4 — ou importa via `globalStyle` se ainda não tiver.
-4. Cria uma rota nova (ex: `/v5`) que renderiza `<app-portfolio></app-portfolio>`. Quando estiver maduro, troca a home.
-
-## Estado
-
-- ✅ Todas as seções portadas
-- ✅ Cmd+K palette funcional (com listener global via `@Listen`)
-- ✅ Persistência de `lang` e `accent` em `localStorage`
-- ✅ Reveal-on-scroll via `IntersectionObserver`
-- ✅ Responsivo (breakpoints 1024 / 720 / 480 já no `styles.css`)
-- ⚠️ Sem Tweaks panel — aquilo era preview-only do prototype React. Se quiser expor toggles no V5 produção, eu te monto algo nativo do V4.
-
-## Notas sobre o CSS
-
-O `styles.css` é exatamente o mesmo do prototype React. Como tudo é `shadow: false`, `:root` continua aplicando, `html[data-accent="amber|lime|cyan|rose"]` continua trocando o accent, e os breakpoints (`@media (max-width: 1024px)` etc.) funcionam normalmente.
-
-## Comandos úteis
-
-```bash
-npm run build     # build de produção (www/ + dist/)
-npm start         # dev server com watch
-npm run generate  # scaffolding de novo componente
-```
+- **Light DOM** (`shadow: false`) nos componentes do portfólio: o CSS é global em
+  `src/global/styles.css`, o texto fica indexável e o accent troca via `html[data-accent]`.
+  A `my-taypage` (NossoAmor) é a exceção — usa `shadow: true`, fiel ao V4.
+- **TypeScript só onde o Stencil obriga.** No restante do meu stack a regra continua
+  JSX puro / Node — TS aqui é exigência do framework, não preferência.
+- **`my-taypage` é pessoal:** `noindex,nofollow` e fora do `sitemap.xml`.
