@@ -327,6 +327,7 @@ export const T = {
     companyVal:   { pt: 'Babita · Pleno', en: 'Babita · Mid-level' } as Str,
     projectLabel: { pt: 'Projeto principal', en: 'Main project' } as Str,
     sinceLabel:   { pt: 'Em campo desde', en: 'In the field since' } as Str,
+    sinceVal:     'Fev/2020' as Str,
     scrollNote:   { pt: '5 SEÇÕES + 1 EASTER EGG', en: '5 SECTIONS + 1 EASTER EGG' } as Str,
   },
   manifesto: {

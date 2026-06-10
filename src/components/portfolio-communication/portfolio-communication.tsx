@@ -13,7 +13,7 @@ export class PortfolioCommunication {
 
   componentDidLoad() {
     const sect = this.host.querySelector('section');
-    if (sect) this.detachReveal = attachReveal(sect as HTMLElement);
+    if (sect) this.detachReveal = attachReveal(sect as HTMLElement, { items: '.yt-card, .meta-card, .diff-item', gap: 110, dist: 26 });
   }
   disconnectedCallback() { this.detachReveal?.(); }
 

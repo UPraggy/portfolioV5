@@ -13,7 +13,7 @@ export class PortfolioTrajectory {
 
   componentDidLoad() {
     const sect = this.host.querySelector('section');
-    if (sect) this.detachReveal = attachReveal(sect as HTMLElement);
+    if (sect) this.detachReveal = attachReveal(sect as HTMLElement, { items: '.tl-row', axis: 'x', dist: 32, gap: 50 });
   }
   disconnectedCallback() { this.detachReveal?.(); }
 

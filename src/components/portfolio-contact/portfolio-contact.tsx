@@ -14,7 +14,7 @@ export class PortfolioContact {
 
   componentDidLoad() {
     const sect = this.host.querySelector('section');
-    if (sect) this.detachReveal = attachReveal(sect as HTMLElement);
+    if (sect) this.detachReveal = attachReveal(sect as HTMLElement, { items: '.contact-cell', gap: 55, dist: 22 });
   }
   disconnectedCallback() { this.detachReveal?.(); }
 

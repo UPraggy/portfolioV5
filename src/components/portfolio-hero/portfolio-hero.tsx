@@ -54,7 +54,7 @@ export class PortfolioHero {
             </div>
             <div>
               <div class="lbl">{tx(T.hero.sinceLabel, L)}</div>
-              <div class="val">Fev/2020</div>
+              <div class="val">{tx(T.hero.sinceVal, L)}</div>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ export class PortfolioManifesto {
 
   componentDidLoad() {
     const sect = this.host.querySelector('section');
-    if (sect) this.detachReveal = attachReveal(sect as HTMLElement);
+    if (sect) this.detachReveal = attachReveal(sect as HTMLElement, { items: '.principle', gap: 65, dist: 24 });
   }
   disconnectedCallback() { this.detachReveal?.(); }
 

@@ -13,7 +13,7 @@ export class PortfolioProjects {
 
   componentDidLoad() {
     const sect = this.host.querySelector('section');
-    if (sect) this.detachReveal = attachReveal(sect as HTMLElement);
+    if (sect) this.detachReveal = attachReveal(sect as HTMLElement, { items: '.proj', axis: 'x', dist: 40, gap: 80 });
   }
   disconnectedCallback() { this.detachReveal?.(); }
 

@@ -11,7 +11,8 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^4.20.0"
+    "@stencil/core": "^4.20.0",
+    "animejs": "^4.4.1"
   },
   "license": "MIT"
 }

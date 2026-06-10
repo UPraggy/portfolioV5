@@ -13,7 +13,7 @@ export class PortfolioLedgb {
 
   componentDidLoad() {
     const sect = this.host.querySelector('section');
-    if (sect) this.detachReveal = attachReveal(sect as HTMLElement);
+    if (sect) this.detachReveal = attachReveal(sect as HTMLElement, { items: '.ledgb-left, .ledgb-right', axis: 'x', dist: 42, gap: 120 });
   }
   disconnectedCallback() { this.detachReveal?.(); }
 
