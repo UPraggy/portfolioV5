@@ -1,4 +1,4 @@
-// global/app.ts — boot hooks for portfoliov5
+// global/app.ts  boot hooks for portfoliov5
 
 export default () => {
   // Ensure data-accent is set on <html> for CSS variables to switch

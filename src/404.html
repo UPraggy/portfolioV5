@@ -50,4 +50,32 @@
     <div class="disc">DEV <b>·</b> DESIGN <b>·</b> INFRA <b>·</b> COMUNICAÇÃO</div>
   </main>
 </body>
+<script>
+function redirecionarParaComponente() {
+  const path = window.location.pathname;
+
+  // 🚫 IGNORA assets
+  if (
+    path.includes('/static/') ||
+    path.includes('.mp3') ||
+    path.includes('.jpg') ||
+    path.includes('.png') ||
+    path.includes('.css') ||
+    path.includes('.js')
+  ) {
+    return;
+  }
+
+  const caminho = path.replace('/portifoliov4', '').substr(1);
+  const paginas = caminho.split('/').filter(val => val !== '');
+
+  if (paginas.length > 0) {
+    const destino = '/portifoliov4/?subPaginas=' + paginas.join(',');
+    console.log('Redirecionando para:', destino);
+    window.location.replace(destino);
+  }
+}
+
+redirecionarParaComponente();
+</script>
 </html>

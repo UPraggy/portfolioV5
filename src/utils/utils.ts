@@ -1,5 +1,5 @@
 // reveal-on-scroll helper for Stencil components.
-// Sem JS (ou com IO indisponivel) o conteudo aparece imediatamente (.in) — nunca esconde
+// Sem JS (ou com IO indisponivel) o conteudo aparece imediatamente (.in)  nunca esconde
 // conteudo prerenderizado de forma permanente. Com JS + motion permitido, anima os filhos
 // em cascata (stagger) via anime.js, no estilo do portfolio V4.
 

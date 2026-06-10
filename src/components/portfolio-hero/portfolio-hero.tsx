@@ -18,21 +18,24 @@ export class PortfolioHero {
           <span class="live">{tx(RAFAEL.status, L)}</span>
           <span>v5 · 2026</span>
         </div>
-        <h1>
+        <h1 class="hero-name">
           <span>Rafael</span>{' '}
           <span class="it">Moreira</span>{' '}
-          <span class="amp">&amp;</span>
-          <br />
-          <span>Ramos</span>{' '}
-          <span>de Rezende</span>
+           {L === 'pt' ? (
+                <a class="herocurricullum" href="./rafael-mr-cv-ptbr.pdf">· Curriculum ↗</a>
+              ) : (
+                <a class="herocurricullum" href="./rafael-mr-cv.pdf">· Curriculum ↗</a>
+              )}
+          
         </h1>
+        
         <div class="hero-grid">
           <div class="hero-tagline-col">
             <div class="hero-tagline">
               {L === 'pt' ? (
-                <span>Construo o <em>ambiente inteiro</em> — código, servidor, rede e tudo entre os dois.</span>
+                <span>Construo o <em>ambiente inteiro</em>  código, servidor, rede e tudo entre os dois.</span>
               ) : (
-                <span>I build the <em>whole environment</em> — code, server, network, everything in between.</span>
+                <span>I build the <em>whole environment</em>  code, server, network, everything in between.</span>
               )}
             </div>
             <div class="hero-disc" aria-hidden="true">

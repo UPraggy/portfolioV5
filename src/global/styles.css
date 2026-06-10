@@ -1,4 +1,4 @@
-/* styles.css — Rafael MR portfolio v5 · editorial-meets-terminal */
+/* styles.css  Rafael MR portfolio v5 · editorial-meets-terminal */
 
 :root {
   /* Warm-dark palette in oklch */
@@ -120,7 +120,7 @@ section.sect + section.sect { border-top: 1px solid var(--hairline); }
 @media (max-width: 720px) { .nav .navlink { display: none; } }
 
 /* ─────────── Hero ─────────── */
-.hero { padding-block: clamp(80px, 12vw, 160px) clamp(60px, 8vw, 120px); position: relative; }
+.hero { padding-block: clamp(80px, 12vw, 50px) clamp(60px, 8vw, 20px); position: relative; }
 .hero-meta {
   display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.1em; color: var(--fg-3);
@@ -131,7 +131,7 @@ section.sect + section.sect { border-top: 1px solid var(--hairline); }
 .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
 .hero-meta .live { color: var(--accent); }
 .hero-meta .live::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); animation: pulse 1.6s ease-in-out infinite; }
-@keyframes pulse { 50% { opacity: 0.4; } }
+  @keyframes pulse { 50% { opacity: 0.4; } }
 
 .hero h1 {
   font-family: var(--serif); font-weight: 400;
@@ -141,6 +141,9 @@ section.sect + section.sect { border-top: 1px solid var(--hairline); }
 }
 .hero h1 .it { font-style: italic; color: var(--accent); }
 .hero h1 .amp { font-style: italic; color: var(--fg-3); padding: 0 0.05em; }
+
+  .hero .herocurricullum { font-style: italic; font-size: clamp(30px, 0.6vw, 168px); animation: pulse 1.6s ease-in-out infinite; 
+    font-family: 'JetBrains Mono'; color: var(--accent);  display: flex; }
 
 .hero-grid {
   display: grid; grid-template-columns: 1.4fr 1fr;
@@ -489,7 +492,7 @@ section.sect + section.sect { border-top: 1px solid var(--hairline); }
 @keyframes toastIn { from { transform: translate(-50%, 12px); opacity: 0; } }
 
 /* ════════════════════════════════════════════════════════════════════════════
-   RESPONSIVE — explicit breakpoints (tablet 1024 · phablet 720 · phone 480)
+   RESPONSIVE  explicit breakpoints (tablet 1024 · phablet 720 · phone 480)
    ════════════════════════════════════════════════════════════════════════════ */
 
 /* Tablet & small laptop (≤1024) ─────────────────────────────── */
@@ -517,7 +520,7 @@ section.sect + section.sect { border-top: 1px solid var(--hairline); }
 
   body { font-size: 15px; }
 
-  /* TopBar — collapse navlinks, keep brand + Cmd-K */
+  /* TopBar  collapse navlinks, keep brand + Cmd-K */
   .topbar-inner { padding: 10px 16px; gap: 12px; }
   .brand { font-size: 10.5px; letter-spacing: 0.06em; }
   .brand b { font-size: 11px; }
@@ -693,7 +696,7 @@ section.sect + section.sect { border-top: 1px solid var(--hairline); }
 }
 
 /* ─────────── Identidade Visual · logo RM + disciplinas ─────────── */
-/* lettermark RM (R periwinkle, M ambar) — cor fixa da marca, independe do accent */
+/* lettermark RM (R periwinkle, M ambar)  cor fixa da marca, independe do accent */
 .rm-mark { display: block; width: auto; height: 24px; flex: 0 0 auto; }
 
 .brand { display: inline-flex; align-items: center; gap: 11px; }

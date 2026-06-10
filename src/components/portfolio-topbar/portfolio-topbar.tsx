@@ -33,9 +33,9 @@ export class PortfolioTopbar {
             <a href="#trajectory" class="navlink">{tx(T.nav.trajectory, this.locale)}</a>
             <a href="#contact"    class="navlink">{tx(T.nav.contact, this.locale)}</a>
             <button class="kbd" onClick={() => this.cmdK.emit()} title="Open command palette">
-              <span>⌘</span><span>K</span>
+              <span>Ctrl+</span><span>K</span>
             </button>
-          </nav>
+          </nav>  
         </div>
       </div>
     );

@@ -19,7 +19,7 @@
 - VisualInspector: ferramenta de analise visual e de UX (MCP + REST + Electron sobre um
   unico motor, ~197 ferramentas). Audita interfaces: responsividade, contraste,
   espacamento, SEO e a11y.
-- QueryBoard: RAG local de ponta a ponta — embeddings no Ollama, vetores no ChromaDB,
+- QueryBoard: RAG local de ponta a ponta  embeddings no Ollama, vetores no ChromaDB,
   orquestracao com LangChain e metadados no PostgreSQL. Dados nao saem do PC.
 
 ## Stack

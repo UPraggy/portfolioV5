@@ -1,4 +1,4 @@
-// src/utils/data.ts — Rafael Moreira Ramos · portfolio content
+// src/utils/data.ts  Rafael Moreira Ramos · portfolio content
 // Single source of truth, typed and fully bilingual (pt/en).
 // Comentarios em pt-BR sem acento por convencao do projeto.
 
@@ -54,8 +54,8 @@ export const RAFAEL = {
     github: 'github.com/UPraggy',
   },
   tagline: {
-    pt: 'Construo o ambiente inteiro — código, servidor, rede e tudo entre os dois.',
-    en: 'I build the whole environment — code, server, network, everything in between.',
+    pt: 'Construo o ambiente inteiro  código, servidor, rede e tudo entre os dois.',
+    en: 'I build the whole environment  code, server, network, everything in between.',
   } as L,
   bio: {
     pt: 'Full Stack pleno na Babita desde Jul/2023, mantendo praticamente todo o ecossistema da empresa com uma equipe pequena: desenvolvimento, servidores, redes, segurança, suporte. Cursando Ciências da Computação na Estácio BH desde 2020. Autodidata, aprendo fazendo, resolvo problemas reais. Investindo forte em comunicação como diferencial.',
@@ -114,8 +114,8 @@ export const PROJECTS: Project[] = [
     name: 'VisualInspector',
     role: { pt: 'Criador · produto', en: 'Creator · product' },
     pitch: {
-      pt: 'Ferramenta de análise visual e de UX que eu uso pra auditar interfaces — inclusive este portfólio. Três interfaces sobre o mesmo motor: servidor MCP pra agentes de IA, API REST e app Electron.',
-      en: 'Visual and UX analysis tool I use to audit interfaces — including this portfolio. Three interfaces over one engine: an MCP server for AI agents, a REST API and an Electron app.',
+      pt: 'Ferramenta de análise visual e de UX que eu uso pra auditar interfaces  inclusive este portfólio. Três interfaces sobre o mesmo motor: servidor MCP pra agentes de IA, API REST e app Electron.',
+      en: 'Visual and UX analysis tool I use to audit interfaces  including this portfolio. Three interfaces over one engine: an MCP server for AI agents, a REST API and an Electron app.',
     },
     bullets: [
       { pt: 'MCP + REST + Electron sobre um único motor de análise', en: 'MCP + REST + Electron over a single analysis engine' },
@@ -140,7 +140,7 @@ export const PROJECTS: Project[] = [
     },
     bullets: [
       { pt: 'Pipeline RAG completo: ingest → embed → buscar → responder', en: 'Full RAG pipeline: ingest → embed → retrieve → answer' },
-      { pt: 'Ollama + ChromaDB local, sem nuvem — dados não saem do PC', en: 'Local Ollama + ChromaDB, no cloud — data never leaves the PC' },
+      { pt: 'Ollama + ChromaDB local, sem nuvem  dados não saem do PC', en: 'Local Ollama + ChromaDB, no cloud  data never leaves the PC' },
       { pt: 'Orquestração LangChain + metadados no PostgreSQL', en: 'LangChain orchestration + metadata in PostgreSQL' },
     ],
     stack: ['LangChain', 'ChromaDB', 'Ollama', 'PostgreSQL', 'Node'],
@@ -152,12 +152,12 @@ export const PROJECTS: Project[] = [
     role: { pt: 'Full Stack Pleno', en: 'Full Stack (mid-level)' },
     pitch: {
       pt: 'Mantenho o ecossistema inteiro com equipe pequena: dev de novas features, servidores, redes, segurança, suporte. Não é um cargo, é um one-man-stack.',
-      en: 'I keep the whole ecosystem running with a small team: building new features, servers, networks, security, support. Not a job title — a one-man stack.',
+      en: 'I keep the whole ecosystem running with a small team: building new features, servers, networks, security, support. Not a job title  a one-man stack.',
     },
     bullets: [
       { pt: 'Backend + frontend de features novas, direto em produção', en: 'Backend + frontend for new features, straight to production' },
       { pt: 'Servidores Linux, Nginx, deploy e uptime no meu colo', en: 'Linux servers, Nginx, deploy and uptime on me' },
-      { pt: 'Rede, firewall, VPN e segurança — a stack inteira', en: 'Network, firewall, VPN and security — the whole stack' },
+      { pt: 'Rede, firewall, VPN e segurança  a stack inteira', en: 'Network, firewall, VPN and security  the whole stack' },
     ],
     stack: ['React', 'Node', 'PostgreSQL', 'Linux', 'Nginx'],
   },
@@ -167,8 +167,8 @@ export const PROJECTS: Project[] = [
     name: 'Igreja São Pedro V1 & V2',
     role: { pt: 'Voluntário · solo', en: 'Volunteer · solo' },
     pitch: {
-      pt: 'Site institucional refeito do zero, depois um V2 quando o V1 envelheceu. Trabalho voluntário — entregue, mantido, sem prazo de validade.',
-      en: 'Institutional site rebuilt from scratch, then a V2 when V1 aged. Volunteer work — delivered, maintained, no expiry date.',
+      pt: 'Site institucional refeito do zero, depois um V2 quando o V1 envelheceu. Trabalho voluntário  entregue, mantido, sem prazo de validade.',
+      en: 'Institutional site rebuilt from scratch, then a V2 when V1 aged. Volunteer work  delivered, maintained, no expiry date.',
     },
     bullets: [
       { pt: 'V1 institucional escrito do zero (Out/2023)', en: 'Institutional V1 written from scratch (Oct/2023)' },
@@ -208,7 +208,7 @@ export const PROJECTS: Project[] = [
       en: 'Investing in communication as a differentiator. Focus: a Linux-for-servers track, from zero to production.',
     },
     bullets: [
-      { pt: 'Trilha Linux Essencial p/ Servidores — do zero à produção', en: 'Essential Linux for Servers — from zero to production' },
+      { pt: 'Trilha Linux Essencial p/ Servidores  do zero à produção', en: 'Essential Linux for Servers  from zero to production' },
       { pt: 'Processo real acontecendo em tempo real, não slide estático', en: 'Real process happening in real time, not static slides' },
       { pt: '+ 2 cursos avançados no roadmap (infra e automação)', en: '+ 2 advanced courses on the roadmap (infra and automation)' },
     ],
@@ -220,7 +220,7 @@ export const PROJECTS: Project[] = [
 ];
 
 export const TIMELINE: TimelineRow[] = [
-  { y: 'Fev/2020', t: { pt: 'Início — Estácio BH', en: 'Start — Estácio BH' }, d: { pt: 'Ciências da Computação.', en: 'Computer Science.' } },
+  { y: 'Fev/2020', t: { pt: 'Início  Estácio BH', en: 'Start  Estácio BH' }, d: { pt: 'Ciências da Computação.', en: 'Computer Science.' } },
   { y: 'Fev/2022', t: { pt: 'Estágio Rádio Inconfidência', en: 'Internship · Rádio Inconfidência' }, d: { pt: 'Primeiro contato com produção real.', en: 'First contact with real production.' } },
   { y: 'Jul/2022', t: 'Portfólio V1', d: { pt: 'Aprendendo na prática.', en: 'Learning by doing.' } },
   { y: 'Jun/2023', t: { pt: 'Portfólio V2 · Figma', en: 'Portfolio V2 · Figma' }, d: { pt: 'Primeira tentativa de pensar design antes do código.', en: 'First attempt at design-before-code.' } },
@@ -229,7 +229,7 @@ export const TIMELINE: TimelineRow[] = [
   { y: 'Abr/2024', t: { pt: 'Portfólio V3 · React', en: 'Portfolio V3 · React' }, d: { pt: 'Refatorando a forma de me apresentar.', en: 'Refactoring how I present myself.' } },
   { y: 'Jul/2024', t: 'Igreja São Pedro V2', d: { pt: 'V1 estava velho. Refiz.', en: 'V1 had aged. Rebuilt it.' } },
   { y: '2025',     t: { pt: 'Portfólio V4 + Canal de YouTube', en: 'Portfolio V4 + YouTube channel' }, d: { pt: 'Stencil.js + Web Components. Início da trilha Linux Essencial para Servidores no YouTube.', en: 'Stencil.js + Web Components. Start of the Essential Linux for Servers track on YouTube.' } },
-  { y: '2026',     t: { pt: 'LEDGB Orchestrator + Portfólio V5', en: 'LEDGB Orchestrator + Portfolio V5' }, d: { pt: 'Lanço o LEDGB — agente de dev autônomo, local-first. E o portfólio que você está lendo.', en: 'Launching LEDGB — an autonomous, local-first dev agent. And the portfolio you\'re reading.' } },
+  { y: '2026',     t: { pt: 'LEDGB Orchestrator + Portfólio V5', en: 'LEDGB Orchestrator + Portfolio V5' }, d: { pt: 'Lanço o LEDGB  agente de dev autônomo, local-first. E o portfólio que você está lendo.', en: 'Launching LEDGB  an autonomous, local-first dev agent. And the portfolio you\'re reading.' } },
 ];
 
 export const PRINCIPLES: Principle[] = [
@@ -299,7 +299,7 @@ export const COMMAND_PALETTE: CmdItem[] = [
   { k: { pt: 'Abrir YouTube', en: 'Open YouTube' },          s: 'Link',    href: 'https://youtube.com/@RafaelMRDev' },
   { k: { pt: 'Abrir LinkedIn', en: 'Open LinkedIn' },        s: 'Link',    href: 'https://linkedin.com/in/rafaelmrdev' },
   { k: { pt: 'Abrir GitHub', en: 'Open GitHub' },            s: 'Link',    href: 'https://github.com/UPraggy' },
-  { k: { pt: 'Ver código deste site', en: 'View this site source' }, s: 'Link', href: 'https://github.com/UPraggy/portfolioV5' },
+  // { k: { pt: 'Ver código deste site', en: 'View this site source' }, s: 'Link', href: 'https://github.com/UPraggy/portfolioV5' },
   { k: { pt: 'Copiar email', en: 'Copy email' },             s: 'Action',  action: 'copyEmail' },
   { k: { pt: 'Trocar idioma', en: 'Toggle language' },       s: 'Action',  action: 'toggleLang' },
   { k: { pt: 'Cor: âmbar', en: 'Accent: amber' },            s: 'Theme',   action: 'accent:amber' },
@@ -309,7 +309,7 @@ export const COMMAND_PALETTE: CmdItem[] = [
 ];
 
 // ───────────────────────────────────────────────────────────────────────────
-// T — dicionario de UI (chrome do site: navegacao, titulos de secao, labels).
+// T  dicionario de UI (chrome do site: navegacao, titulos de secao, labels).
 // Tudo que NAO e conteudo-dado fica aqui, bilingue.
 // ───────────────────────────────────────────────────────────────────────────
 export const T = {
@@ -333,24 +333,24 @@ export const T = {
   manifesto: {
     num:   '01 / MANIFESTO' as Str,
     title: { pt: 'Não sou um dev que <em>só codifica</em>.', en: 'I\'m not a dev who <em>just writes code</em>.' } as Str,
-    sub:   { pt: 'Quatro princípios que explicam por que essa carreira tomou esse formato e por que esse portfólio existe.', en: 'Four principles that explain why this career took this shape — and why this portfolio exists.' } as Str,
+    sub:   { pt: 'Quatro princípios que explicam por que essa carreira tomou esse formato e por que esse portfólio existe.', en: 'Four principles that explain why this career took this shape  and why this portfolio exists.' } as Str,
   },
   stack: {
     num:   '02 / STACK' as Str,
     title: { pt: 'Ferramentas que <em>resolvem</em>, regras que não <em>negocio</em>.', en: 'Tools that <em>get it done</em>, rules I don\'t <em>negotiate</em>.' } as Str,
-    sub:   { pt: 'JSX puro, sem TypeScript salvo quando o framework obriga (oi Stencil). Express e ws. PostgreSQL via pg Pool. Sem Mongoose, sem Redux, sem Docker, sem Tailwind. Não é dogma — é o que se mantém com a mão pequena que eu tenho.', en: 'Plain JSX, no TypeScript unless the framework forces it (hi Stencil). Express and ws. PostgreSQL via pg Pool. No Mongoose, no Redux, no Docker, no Tailwind. Not dogma — just what stays maintainable with the small hands I have.' } as Str,
+    sub:   { pt: 'JSX puro, sem TypeScript salvo quando o framework obriga (oi Stencil). Express e ws. PostgreSQL via pg Pool. Sem Mongoose, sem Redux, sem Docker, sem Tailwind. Não é dogma  é o que se mantém com a mão pequena que eu tenho.', en: 'Plain JSX, no TypeScript unless the framework forces it (hi Stencil). Express and ws. PostgreSQL via pg Pool. No Mongoose, no Redux, no Docker, no Tailwind. Not dogma  just what stays maintainable with the small hands I have.' } as Str,
   },
   ledgb: {
     num:   { pt: '03 / PROJETO EM DESTAQUE', en: '03 / FEATURED PROJECT' } as Str,
     title: 'LEDGB <em>Orchestrator</em>.' as Str,
     sub:   { pt: 'Claude Code pra quem quer CLI premium. Codex pra quem quer OpenAI grátis. LEDGB pra quem quer GUI premium + IA grátis funcional + memória de projeto + controle do celular. Local-first.', en: 'Claude Code if you want premium CLI. Codex for free OpenAI. LEDGB if you want a premium GUI + working free AI + project memory + phone control. Local-first.' } as Str,
-    badge: { pt: '2026 — em produção', en: '2026 — in production' } as Str,
+    badge: { pt: '2026  em produção', en: '2026  in production' } as Str,
     sublabel: 'Autonomous Development Agent · v5.0' as Str,
   },
   projects: {
     num:   { pt: '04 / PROJETOS', en: '04 / PROJECTS' } as Str,
     title: { pt: 'O que <em>eu</em> mantenho.', en: 'What <em>I</em> maintain.' } as Str,
-    sub:   { pt: 'Produtos meus — LEDGB, VisualInspector, QueryBoard — mais o ecossistema da Babita e o trabalho voluntário. Cada um resolve uma coisa diferente, e juntos cobrem dev, infra, design e comunicação.', en: 'My own products — LEDGB, VisualInspector, QueryBoard — plus the Babita ecosystem and volunteer work. Each one solves something different, and together they cover dev, infra, design and communication.' } as Str,
+    sub:   { pt: 'Produtos meus  LEDGB, VisualInspector, QueryBoard  mais o ecossistema da Babita e o trabalho voluntário. Cada um resolve uma coisa diferente, e juntos cobrem dev, infra, design e comunicação.', en: 'My own products  LEDGB, VisualInspector, QueryBoard  plus the Babita ecosystem and volunteer work. Each one solves something different, and together they cover dev, infra, design and communication.' } as Str,
   },
   trajectory: {
     num:   { pt: '05 / TRAJETÓRIA', en: '05 / TRAJECTORY' } as Str,
@@ -360,17 +360,17 @@ export const T = {
   comm: {
     num:   { pt: '06 / COMUNICAÇÃO', en: '06 / COMMUNICATION' } as Str,
     title: { pt: 'Comunicação como <em>diferencial</em>.', en: 'Communication as a <em>differentiator</em>.' } as Str,
-    sub:   { pt: 'Tecnologia continua sendo a base. Mas transformar conhecimento em comunicação clara — isso tem se tornado a parte mais importante da jornada. Por isso o canal.', en: 'Technology is still the foundation. But turning knowledge into clear communication — that has become the most important part of the journey. Hence the channel.' } as Str,
-    ytStat:   { pt: 'Canal · 2025—', en: 'Channel · 2025—' } as Str,
+    sub:   { pt: 'Tecnologia continua sendo a base. Mas transformar conhecimento em comunicação clara  isso tem se tornado a parte mais importante da jornada. Por isso o canal.', en: 'Technology is still the foundation. But turning knowledge into clear communication  that has become the most important part of the journey. Hence the channel.' } as Str,
+    ytStat:   { pt: 'Canal · 2025', en: 'Channel · 2025' } as Str,
     ytTitle:  { pt: 'Trilha <em>Linux Essencial</em><br /> para Servidores.', en: '<em>Essential Linux</em><br /> for Servers track.' } as Str,
-    ytLede:   { pt: 'Do fundamento ao cenário real. Demonstração prática, processo acontecendo em tempo real — não vídeo estático. A trilha inicial cobre 11 módulos:', en: 'From fundamentals to real-world scenarios. Hands-on, process happening in real time — not a static video. The initial track covers 11 modules:' } as Str,
+    ytLede:   { pt: 'Do fundamento ao cenário real. Demonstração prática, processo acontecendo em tempo real  não vídeo estático. A trilha inicial cobre 11 módulos:', en: 'From fundamentals to real-world scenarios. Hands-on, process happening in real time  not a static video. The initial track covers 11 modules:' } as Str,
     ytRoadmap:{ pt: '+ dois cursos avançados no roadmap: infraestrutura, automação e desenvolvimento aplicado.', en: '+ two advanced courses on the roadmap: infrastructure, automation and applied development.' } as Str,
     ytCta:    { pt: 'ASSISTIR NO YOUTUBE →', en: 'WATCH ON YOUTUBE →' } as Str,
     metaEyebrow: { pt: 'O MAIOR APRENDIZADO NÃO FOI TÉCNICO', en: 'THE BIGGEST LESSON WASN\'T TECHNICAL' } as Str,
     metaLede: { pt: 'Gravar, assistir e revisar a própria comunicação é o exercício profissional mais rico que descobri esse ano.', en: 'Recording, watching and reviewing my own communication is the richest professional exercise I found this year.' } as Str,
-    metaQuote:{ pt: 'Comecei a praticar algo que antes eu evitava: <em>aparecer em câmera</em>. Parece simples — mas é onde os vícios de linguagem, o excesso, a falta de objetividade ficam expostos. E é onde a postura, a presença e a clareza começam a melhorar.', en: 'I started practicing something I used to avoid: <em>being on camera</em>. Sounds simple — but it\'s where verbal tics, excess and lack of objectivity get exposed. And it\'s where posture, presence and clarity start to improve.' } as Str,
+    metaQuote:{ pt: 'Comecei a praticar algo que antes eu evitava: <em>aparecer em câmera</em>. Parece simples  mas é onde os vícios de linguagem, o excesso, a falta de objetividade ficam expostos. E é onde a postura, a presença e a clareza começam a melhorar.', en: 'I started practicing something I used to avoid: <em>being on camera</em>. Sounds simple  but it\'s where verbal tics, excess and lack of objectivity get exposed. And it\'s where posture, presence and clarity start to improve.' } as Str,
     diffAh:   { pt: 'Dev + Sysadmin no mesmo cargo.', en: 'Dev + Sysadmin in one role.' } as Str,
-    diffAp:   { pt: 'Na Babita, o mesmo cara mantém o backend, o frontend, os servidores Linux, a rede e a segurança. Stack inteira por necessidade — e por gosto.', en: 'At Babita, the same person maintains the backend, the frontend, the Linux servers, the network and security. The whole stack out of necessity — and taste.' } as Str,
+    diffAp:   { pt: 'Na Babita, o mesmo cara mantém o backend, o frontend, os servidores Linux, a rede e a segurança. Stack inteira por necessidade  e por gosto.', en: 'At Babita, the same person maintains the backend, the frontend, the Linux servers, the network and security. The whole stack out of necessity  and taste.' } as Str,
     diffBh:   { pt: 'Solo dev que envia.', en: 'Solo dev who ships.' } as Str,
     diffBp:   { pt: 'LEDGB Orchestrator não tem time. É um dev, um Electron, e a decisão de não esperar permissão pra construir o que estava faltando.', en: 'LEDGB Orchestrator has no team. It\'s one dev, one Electron app, and the decision not to wait for permission to build what was missing.' } as Str,
   },
