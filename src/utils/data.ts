@@ -42,7 +42,7 @@ export const RAFAEL = {
   shortName: 'Rafael MR',
   handle: '@RafaelMRDev',
   github: 'UPraggy',
-  role: 'AI Developer & Fullstack Engineer',
+  role: 'Full Stack Developer · Design · Infra · Comunicação',
   location: 'Belo Horizonte, MG · BR',
   timezone: 'GMT-3',
   status: { pt: 'Disponível p/ conversar', en: 'Available to chat' } as L,
@@ -66,10 +66,10 @@ export const RAFAEL = {
 export const STACK: StackGroup[] = [
   { group: 'Frontend',                          items: ['React 18', 'Vite', 'JSX puro', 'Stencil.js', 'CSS custom props', 'Electron'] },
   { group: 'Backend',                           items: ['Node.js', 'Express', 'WebSockets', 'REST', 'JWT/HMAC', 'Multer'] },
-  { group: 'Data',                              items: ['PostgreSQL', 'MongoDB (driver)', 'Redis', 'SQLite', 'pg Pool'] },
-  { group: 'AI / LLM',                          items: ['OpenAI SDK', 'OpenRouter', 'Ollama local', 'Groq', 'Google AI', 'Streaming SSE'] },
+  { group: 'Data',                              items: ['PostgreSQL', 'MongoDB (driver)', 'Redis', 'SQLite', 'ChromaDB', 'pg Pool'] },
+  { group: 'AI / LLM',                          items: ['OpenAI SDK', 'OpenRouter', 'Ollama local', 'Groq', 'LangChain', 'RAG', 'Streaming SSE'] },
   { group: 'Infra',                             items: ['Linux servers', 'Nginx', 'SSH multi-host', 'Cron', 'PM2', 'Backups'] },
-  { group: { pt: 'Ferramenta', en: 'Tooling' }, items: ['Git', 'Obsidian', 'OBS', 'Figma', 'VS Code', 'Bash/PowerShell'] },
+  { group: { pt: 'Ferramenta', en: 'Tooling' }, items: ['Git', 'MCP', 'Playwright', 'Obsidian', 'OBS', 'Figma', 'VS Code', 'Bash/PowerShell'] },
 ];
 
 export const STACK_RULES: RuleRow[] = [
@@ -109,6 +109,43 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    id: 'visualinspector',
+    year: '2026—',
+    name: 'VisualInspector',
+    role: { pt: 'Criador · produto', en: 'Creator · product' },
+    pitch: {
+      pt: 'Ferramenta de análise visual e de UX que eu uso pra auditar interfaces — inclusive este portfólio. Três interfaces sobre o mesmo motor: servidor MCP pra agentes de IA, API REST e app Electron.',
+      en: 'Visual and UX analysis tool I use to audit interfaces — including this portfolio. Three interfaces over one engine: an MCP server for AI agents, a REST API and an Electron app.',
+    },
+    bullets: [
+      { pt: 'MCP + REST + Electron sobre um único motor de análise', en: 'MCP + REST + Electron over a single analysis engine' },
+      { pt: 'Screenshots responsivos, contraste, espaçamento, SEO e a11y', en: 'Responsive screenshots, contrast, spacing, SEO and a11y' },
+      { pt: 'Busca de ferramentas por intenção, pensada pra agentes', en: 'Intent-based tool search, designed for agents' },
+    ],
+    stack: ['Node', 'Electron', 'MCP', 'REST', 'Playwright'],
+    metrics: [
+      { v: '197', l: { pt: 'ferramentas', en: 'tools' } },
+      { v: '3',   l: { pt: 'interfaces (MCP·REST·app)', en: 'interfaces (MCP·REST·app)' } },
+      { v: 'v2',  l: { pt: 'em produção', en: 'in production' } },
+    ],
+  },
+  {
+    id: 'queryboard',
+    year: '2025—',
+    name: 'QueryBoard',
+    role: { pt: 'Criador · RAG local', en: 'Creator · local RAG' },
+    pitch: {
+      pt: 'Busca e perguntas sobre os seus próprios documentos, rodando local. RAG de ponta a ponta: embeddings no Ollama, vetores no ChromaDB, orquestração com LangChain e metadados no Postgres.',
+      en: 'Search and ask questions over your own documents, running locally. End-to-end RAG: embeddings on Ollama, vectors in ChromaDB, orchestration with LangChain and metadata in Postgres.',
+    },
+    bullets: [
+      { pt: 'Pipeline RAG completo: ingest → embed → buscar → responder', en: 'Full RAG pipeline: ingest → embed → retrieve → answer' },
+      { pt: 'Ollama + ChromaDB local, sem nuvem — dados não saem do PC', en: 'Local Ollama + ChromaDB, no cloud — data never leaves the PC' },
+      { pt: 'Orquestração LangChain + metadados no PostgreSQL', en: 'LangChain orchestration + metadata in PostgreSQL' },
+    ],
+    stack: ['LangChain', 'ChromaDB', 'Ollama', 'PostgreSQL', 'Node'],
+  },
+  {
     id: 'babita',
     year: 'Jul/2023—',
     name: { pt: 'Babita · ecossistema interno', en: 'Babita · internal ecosystem' },
@@ -117,6 +154,11 @@ export const PROJECTS: Project[] = [
       pt: 'Mantenho o ecossistema inteiro com equipe pequena: dev de novas features, servidores, redes, segurança, suporte. Não é um cargo, é um one-man-stack.',
       en: 'I keep the whole ecosystem running with a small team: building new features, servers, networks, security, support. Not a job title — a one-man stack.',
     },
+    bullets: [
+      { pt: 'Backend + frontend de features novas, direto em produção', en: 'Backend + frontend for new features, straight to production' },
+      { pt: 'Servidores Linux, Nginx, deploy e uptime no meu colo', en: 'Linux servers, Nginx, deploy and uptime on me' },
+      { pt: 'Rede, firewall, VPN e segurança — a stack inteira', en: 'Network, firewall, VPN and security — the whole stack' },
+    ],
     stack: ['React', 'Node', 'PostgreSQL', 'Linux', 'Nginx'],
   },
   {
@@ -128,6 +170,11 @@ export const PROJECTS: Project[] = [
       pt: 'Site institucional refeito do zero, depois um V2 quando o V1 envelheceu. Trabalho voluntário — entregue, mantido, sem prazo de validade.',
       en: 'Institutional site rebuilt from scratch, then a V2 when V1 aged. Volunteer work — delivered, maintained, no expiry date.',
     },
+    bullets: [
+      { pt: 'V1 institucional escrito do zero (Out/2023)', en: 'Institutional V1 written from scratch (Oct/2023)' },
+      { pt: 'V2 refeito quando o V1 envelheceu (Jul/2024)', en: 'V2 rebuilt when V1 aged (Jul/2024)' },
+      { pt: 'Voluntário, solo, no ar e mantido sem prazo', en: 'Volunteer, solo, live and maintained with no deadline' },
+    ],
     stack: ['React', 'Node', 'PostgreSQL'],
   },
   {
@@ -139,7 +186,17 @@ export const PROJECTS: Project[] = [
       pt: 'O site que você está lendo. Stencil + Web Components em light DOM, bilíngue PT/EN, pré-renderizado e ajustado pra ser achado por buscadores e por IA. Sucessor do V4, fiel à mesma identidade visual.',
       en: 'The site you\'re reading. Stencil + Web Components in light DOM, bilingual PT/EN, prerendered and tuned to be found by search engines and AI. Successor to V4, faithful to the same visual identity.',
     },
+    bullets: [
+      { pt: 'Stencil + Web Components em light DOM, CSS sem framework', en: 'Stencil + Web Components in light DOM, no CSS framework' },
+      { pt: 'Bilíngue PT/EN com i18n, hreflang e /en/ pré-renderizado', en: 'Bilingual PT/EN with i18n, hreflang and prerendered /en/' },
+      { pt: 'JSON-LD + OG + sitemap pra ser achado por busca e por IA', en: 'JSON-LD + OG + sitemap to be found by search and AI' },
+    ],
     stack: ['Stencil.js', 'Web Components', 'i18n', 'Prerender', 'JSON-LD'],
+    metrics: [
+      { v: '2', l: { pt: 'idiomas', en: 'languages' } },
+      { v: '7', l: { pt: 'seções', en: 'sections' } },
+      { v: '0', l: { pt: 'frameworks CSS', en: 'CSS frameworks' } },
+    ],
   },
   {
     id: 'youtube',
@@ -150,7 +207,15 @@ export const PROJECTS: Project[] = [
       pt: 'Investindo em comunicação como diferencial. Foco: trilha de Linux para servidores, do zero até produção.',
       en: 'Investing in communication as a differentiator. Focus: a Linux-for-servers track, from zero to production.',
     },
+    bullets: [
+      { pt: 'Trilha Linux Essencial p/ Servidores — do zero à produção', en: 'Essential Linux for Servers — from zero to production' },
+      { pt: 'Processo real acontecendo em tempo real, não slide estático', en: 'Real process happening in real time, not static slides' },
+      { pt: '+ 2 cursos avançados no roadmap (infra e automação)', en: '+ 2 advanced courses on the roadmap (infra and automation)' },
+    ],
     stack: ['OBS', 'Linux', 'Roteiro', 'Edição'],
+    metrics: [
+      { v: '11', l: { pt: 'módulos na trilha', en: 'track modules' } },
+    ],
   },
 ];
 
@@ -257,7 +322,7 @@ export const T = {
   },
   hero: {
     roleLabel:    { pt: 'Função', en: 'Role' } as Str,
-    roleVal:      'AI Dev + Fullstack' as Str,
+    roleVal:      'Full Stack · Sysadmin' as Str,
     companyLabel: { pt: 'Empresa atual', en: 'Current company' } as Str,
     companyVal:   { pt: 'Babita · Pleno', en: 'Babita · Mid-level' } as Str,
     projectLabel: { pt: 'Projeto principal', en: 'Main project' } as Str,
@@ -284,7 +349,7 @@ export const T = {
   projects: {
     num:   { pt: '04 / PROJETOS', en: '04 / PROJECTS' } as Str,
     title: { pt: 'O que <em>eu</em> mantenho.', en: 'What <em>I</em> maintain.' } as Str,
-    sub:   { pt: 'Babita é o trabalho, Igreja São Pedro é o voluntário, o canal é a comunicação, o portfólio é a vitrine. Cada um resolve uma coisa diferente.', en: 'Babita is the job, Igreja São Pedro is the volunteer work, the channel is communication, the portfolio is the showcase. Each one solves something different.' } as Str,
+    sub:   { pt: 'Produtos meus — LEDGB, VisualInspector, QueryBoard — mais o ecossistema da Babita e o trabalho voluntário. Cada um resolve uma coisa diferente, e juntos cobrem dev, infra, design e comunicação.', en: 'My own products — LEDGB, VisualInspector, QueryBoard — plus the Babita ecosystem and volunteer work. Each one solves something different, and together they cover dev, infra, design and communication.' } as Str,
   },
   trajectory: {
     num:   { pt: '05 / TRAJETÓRIA', en: '05 / TRAJECTORY' } as Str,

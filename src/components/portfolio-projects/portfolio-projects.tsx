@@ -35,7 +35,24 @@ export class PortfolioProjects {
                 <div class="name">{tx(p.name, L)}</div>
                 <div class="role">{tx(p.role, L)}</div>
               </div>
-              <div class="pitch">{tx(p.pitch, L)}</div>
+              <div class="pitch">
+                <p class="pitch-lede">{tx(p.pitch, L)}</p>
+                {p.bullets && (
+                  <ul class="proj-bul">
+                    {p.bullets.map((b) => <li>{tx(b, L)}</li>)}
+                  </ul>
+                )}
+                {p.metrics && (
+                  <div class="proj-metrics">
+                    {p.metrics.map((m) => (
+                      <div class="pm">
+                        <span class="pm-v">{m.v}</span>
+                        <span class="pm-l">{tx(m.l, L)}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
               <div class="right">
                 {p.stack.map((s) => <span class="chip">{s}</span>)}
               </div>

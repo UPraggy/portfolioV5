@@ -1,25 +1,32 @@
 # Rafael Moreira Ramos de Rezende
 
-> AI Developer & Fullstack Engineer baseado em Belo Horizonte (BR). Criador do LEDGB
-> Orchestrator, um agente de desenvolvimento autonomo. Trabalha com Stencil, Node.js,
-> React e integracao de modelos de IA. Portfolio bilingue (PT/EN).
+> Full Stack Developer e Sysadmin baseado em Belo Horizonte (BR). Quatro pilares:
+> Design, Dev, Infra e Comunicacao. Criador do LEDGB Orchestrator, do VisualInspector
+> e do QueryBoard. Trabalha com Stencil, Node.js, React, Linux e RAG. Portfolio
+> bilingue (PT/EN).
 
 ## Quem e
 
 - Nome: Rafael Moreira Ramos de Rezende
-- Atua como: AI Developer & Fullstack Engineer
+- Atua como: Full Stack Developer & Sysadmin (Design · Dev · Infra · Comunicacao)
 - Local: Belo Horizonte, Minas Gerais, Brasil (GMT-3)
 - Username: UPraggy
 
-## Projeto principal
+## Projetos
 
-- LEDGB Orchestrator: IDE/agente autonomo de desenvolvimento. Orquestra tarefas de
-  codigo de ponta a ponta com modelos de IA.
+- LEDGB Orchestrator: IDE/agente autonomo de desenvolvimento, local-first, roda no PC
+  com IA gratis e memoria de projeto entre sessoes.
+- VisualInspector: ferramenta de analise visual e de UX (MCP + REST + Electron sobre um
+  unico motor, ~197 ferramentas). Audita interfaces: responsividade, contraste,
+  espacamento, SEO e a11y.
+- QueryBoard: RAG local de ponta a ponta — embeddings no Ollama, vetores no ChromaDB,
+  orquestracao com LangChain e metadados no PostgreSQL. Dados nao saem do PC.
 
 ## Stack
 
 - Linguagens/runtime: Node.js, JavaScript, React (JSX), Stencil (Web Components)
-- IA: integracao com LLMs, agentes autonomos, ferramentas de orquestracao
+- Infra: Linux, Nginx, SSH multi-host, firewall, VPN, PM2, backups
+- IA: RAG, LangChain, ChromaDB, Ollama, OpenAI SDK, MCP, agentes
 - Padrao: ESM, drivers nativos (pg / mongo), express, ws, openai
 
 ## Links

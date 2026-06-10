@@ -36,7 +36,7 @@ export class PortfolioHero {
               )}
             </div>
             <div class="hero-disc" aria-hidden="true">
-              <span>DEV</span><span>DESIGN</span><span>INFRA</span>
+              <span>DEV</span><span>DESIGN</span><span>INFRA</span><span>COMUNICAÇÃO</span>
             </div>
           </div>
           <div class="hero-stats">
