@@ -27,12 +27,17 @@ export class PortfolioHero {
           <span>de Rezende</span>
         </h1>
         <div class="hero-grid">
-          <div class="hero-tagline">
-            {L === 'pt' ? (
-              <span>Construo o <em>ambiente inteiro</em> — código, servidor, rede e tudo entre os dois.</span>
-            ) : (
-              <span>I build the <em>whole environment</em> — code, server, network, everything in between.</span>
-            )}
+          <div class="hero-tagline-col">
+            <div class="hero-tagline">
+              {L === 'pt' ? (
+                <span>Construo o <em>ambiente inteiro</em> — código, servidor, rede e tudo entre os dois.</span>
+              ) : (
+                <span>I build the <em>whole environment</em> — code, server, network, everything in between.</span>
+              )}
+            </div>
+            <div class="hero-disc" aria-hidden="true">
+              <span>DEV</span><span>DESIGN</span><span>INFRA</span>
+            </div>
           </div>
           <div class="hero-stats">
             <div>

@@ -16,3 +16,6 @@ Thumbs.db
 
 # scaffolding / referencia Builder.io (nao faz parte do site publicado)
 _builder-reference/
+
+# editor/local preview
+.claude/

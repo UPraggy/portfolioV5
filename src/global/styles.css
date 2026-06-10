@@ -656,3 +656,50 @@ section.sect + section.sect { border-top: 1px solid var(--hairline); }
   .cursor { animation: none; }
   .hero-meta .live::before { animation: none; }
 }
+
+/* ─────────── Identidade Visual · logo RM + disciplinas ─────────── */
+/* lettermark RM (R periwinkle, M ambar) — cor fixa da marca, independe do accent */
+.rm-mark { display: block; width: auto; height: 24px; flex: 0 0 auto; }
+
+.brand { display: inline-flex; align-items: center; gap: 11px; }
+.brand .rm-mark { height: 20px; }
+
+/* faixa DEV · DESIGN · INFRA abaixo da tagline do hero */
+.hero-tagline-col { display: flex; flex-direction: column; gap: 18px; }
+.hero-disc {
+  display: flex; align-items: center; flex-wrap: wrap;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--fg-3);
+}
+.hero-disc span:not(:first-child)::before {
+  content: "·"; color: var(--accent); padding: 0 11px; letter-spacing: 0;
+}
+
+/* lockup de marca no rodape (acima do .foot) */
+.brand-lockup {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 30px 0; border-top: 1px solid var(--hairline);
+}
+.brand-lockup .rm-mark { height: 32px; }
+.brand-lockup .bl-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.brand-lockup .bl-name { font-family: var(--mono); font-size: 13px; letter-spacing: 0.2em; color: var(--fg); }
+.brand-lockup .bl-disc { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.22em; color: var(--fg-3); }
+.brand-lockup .bl-disc b { color: var(--accent); font-weight: 400; }
+.brand-lockup .bl-site {
+  margin-left: auto; font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.14em; color: var(--fg-2); text-transform: uppercase;
+}
+
+/* ─────────── Celular · seguranca de espacamento / overflow ─────────── */
+/* strings longas (email, urls, mono) nao estouram a viewport no celular */
+.contact-cell .v, .hero-stats .val, .proj .pitch { overflow-wrap: anywhere; }
+/* min-width:0 evita que filhos de grid/flex furem o container (causa #1 de scroll lateral) */
+.hero-stats > div, .contact-cell, .proj > * { min-width: 0; }
+
+@media (max-width: 540px) {
+  .brand-lockup { gap: 13px; padding: 24px 0; }
+  .brand-lockup .rm-mark { height: 28px; }
+  .brand-lockup .bl-site { margin-left: 0; width: 100%; }
+  .hero-disc { font-size: 10px; letter-spacing: 0.2em; }
+  .hero-disc span:not(:first-child)::before { padding: 0 9px; }
+}

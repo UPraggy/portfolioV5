@@ -13,8 +13,14 @@ export class PortfolioTopbar {
     return (
       <div class="topbar">
         <div class="topbar-inner">
-          <a href="#top" class="brand">
-            <span class="dot"></span>
+          <a href="#top" class="brand" aria-label="Rafael MR · topo">
+            <svg class="rm-mark" viewBox="0 0 46 28" fill="none" aria-hidden="true">
+              <path d="M4 24 V4 H13 A5 5 0 0 1 13 13 H4 M5 13 L16 24" stroke="#9DB1EA" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M23 24 V4 L32 14 L41 4 V24" stroke="#EAA94E" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="4" cy="4" r="1.5" fill="#F1EDE2" />
+              <circle cx="41" cy="4" r="1.5" fill="#F1EDE2" />
+              <circle cx="32" cy="14" r="1.5" fill="#EAA94E" />
+            </svg>
             <span><b>RAFAEL MR</b> · v5 · 2026</span>
           </a>
           <nav class="nav">

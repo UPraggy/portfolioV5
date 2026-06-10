@@ -43,6 +43,20 @@ export class PortfolioContact {
               <div class="v">@RafaelMRDev <span class="arr">↗</span></div>
             </a>
           </div>
+          <div class="brand-lockup">
+            <svg class="rm-mark" viewBox="0 0 46 28" fill="none" aria-label="Rafael MR">
+              <path d="M4 24 V4 H13 A5 5 0 0 1 13 13 H4 M5 13 L16 24" stroke="#9DB1EA" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M23 24 V4 L32 14 L41 4 V24" stroke="#EAA94E" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="4" cy="4" r="1.5" fill="#F1EDE2" />
+              <circle cx="41" cy="4" r="1.5" fill="#F1EDE2" />
+              <circle cx="32" cy="14" r="1.5" fill="#EAA94E" />
+            </svg>
+            <div class="bl-txt">
+              <div class="bl-name">RAFAEL MR</div>
+              <div class="bl-disc">DEV <b>·</b> DESIGN <b>·</b> INFRA</div>
+            </div>
+            <div class="bl-site">RAFAELMR.COM.BR</div>
+          </div>
           <div class="foot">
             <span>© 2026 · RAFAEL MOREIRA RAMOS DE REZENDE</span>
             <span>BELO HORIZONTE · BR · GMT-3</span>

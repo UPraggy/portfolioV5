@@ -13,11 +13,12 @@ export const config: Config = {
       baseUrl: 'https://rafaelmr.com.br/',
       prerenderConfig: './prerender.config.ts',
       copy: [
+        { src: '404.html' },
         { src: 'llms.txt' },
         { src: 'CNAME' },
         // pagina extra NossoAmor (Tay) + seus assets, portada do V4
         { src: 'nossoamor.html', dest: 'nossoamor/index.html' },
-        { src: 'static', dest: 'portifoliov4/static' },
+        { src: 'static', dest: 'portifoliov5/static' },
       ],
     },
   ],

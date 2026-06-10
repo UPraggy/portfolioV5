@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>404 · Rafael MR</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <style>
+    :root { color-scheme: dark; }
+    * { margin: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh; display: grid; place-items: center; padding: 24px;
+      background: #11131C; color: #F1EDE2;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-align: center;
+    }
+    .wrap { max-width: 460px; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+    .mark { width: 84px; height: auto; }
+    .code { font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: #9DB1EA; }
+    h1 { font-size: clamp(28px, 9vw, 40px); font-weight: 500; letter-spacing: -0.01em; line-height: 1.15; }
+    p { font-size: 13.5px; line-height: 1.7; color: #b9b1a4; letter-spacing: 0.01em; }
+    a.home {
+      margin-top: 4px; display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 22px; border: 1px solid #EAA94E; border-radius: 999px;
+      color: #EAA94E; text-decoration: none; font-size: 12px; letter-spacing: 0.16em;
+      text-transform: uppercase; transition: background .2s, color .2s;
+    }
+    a.home:hover { background: #EAA94E; color: #11131C; }
+    .disc { font-size: 10.5px; letter-spacing: 0.24em; color: #6f6a60; text-transform: uppercase; }
+    .disc b { color: #EAA94E; font-weight: 400; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <svg class="mark" viewBox="0 0 46 28" fill="none" aria-label="Rafael MR">
+      <path d="M4 24 V4 H13 A5 5 0 0 1 13 13 H4 M5 13 L16 24" stroke="#9DB1EA" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M23 24 V4 L32 14 L41 4 V24" stroke="#EAA94E" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="4" cy="4" r="1.5" fill="#F1EDE2" />
+      <circle cx="41" cy="4" r="1.5" fill="#F1EDE2" />
+      <circle cx="32" cy="14" r="1.5" fill="#EAA94E" />
+    </svg>
+    <div class="code">Error 404</div>
+    <h1>Página não encontrada</h1>
+    <p>Esta rota não existe. / This page doesn't exist.</p>
+    <a class="home" href="/">← Voltar ao início · Home</a>
+    <div class="disc">DEV <b>·</b> DESIGN <b>·</b> INFRA</div>
+  </main>
+</body>
+</html>

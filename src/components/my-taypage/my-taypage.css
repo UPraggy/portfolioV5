@@ -311,7 +311,7 @@ position: relative;
     width: 80%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: url('/portifoliov4/static/imgs/taynaraContador/skyintheDate1808.png') no-repeat center / cover;
+    background: url('/portifoliov5/static/imgs/taynaraContador/skyintheDate1808.png') no-repeat center / cover;
     margin: 0 auto 70px auto;
   /* rotação inicial não é necessária */
   animation: girarDevagar 60s linear infinite; /* 60 segundos = bem devagar */

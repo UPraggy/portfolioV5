@@ -25,7 +25,7 @@ O build gera `www/` (ignorado no git — e artefato de CI).
 - `src/components/my-taypage/` — **pagina extra "NossoAmor"** (portada do V4, pessoal, para a Tay). Host: `src/nossoamor.html` -> `/nossoamor/`. Marcada `noindex` e fora do sitemap.
 - `src/utils/data.ts` — textos PT/EN, stack, projetos, timeline, principios, command palette.
 - `src/global/` — `app.ts`, `styles.css` (portfolio) e `colors.css`/`fonts.css` (NossoAmor).
-- `src/static/` — assets da NossoAmor (fotos/audio/fontes), copiados para `www/portifoliov4/static/`.
+- `src/static/` — assets da NossoAmor (fotos/audio/fontes), copiados para `www/portifoliov5/static/`.
 
 ## Deploy — GitHub Pages
 Workflow: `.github/workflows/pages.yml` (build no push para `main`, deploy de `www/`).

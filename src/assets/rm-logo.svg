@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 28" fill="none" role="img" aria-label="Rafael MR">
+  <!-- R · periwinkle (blueprint) -->
+  <path d="M4 24 V4 H13 A5 5 0 0 1 13 13 H4 M5 13 L16 24"
+        stroke="#9DB1EA" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- M · ambar primario -->
+  <path d="M23 24 V4 L32 14 L41 4 V24"
+        stroke="#EAA94E" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- nos de construcao -->
+  <circle cx="4" cy="4" r="1.5" fill="#F1EDE2"/>
+  <circle cx="41" cy="4" r="1.5" fill="#F1EDE2"/>
+  <circle cx="32" cy="14" r="1.5" fill="#EAA94E"/>
+</svg>

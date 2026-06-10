@@ -30,7 +30,7 @@ src/
 ├── CNAME · llms.txt
 ├── global/                ← app.ts, styles.css (portfolio) + colors.css/fonts.css (NossoAmor)
 ├── assets/                ← imagens (logo/screenshot LEDGB)
-├── static/                ← assets da NossoAmor (fotos/áudio/fontes) → www/portifoliov4/static/
+├── static/                ← assets da NossoAmor (fotos/áudio/fontes) → www/portifoliov5/static/
 ├── utils/                 ← data.ts (textos PT/EN, projetos, timeline) + utils.ts
 └── components/
     ├── app-portfolio/     ← raiz · idioma por URL, accent, Cmd+K, toast

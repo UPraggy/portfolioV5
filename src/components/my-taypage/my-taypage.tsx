@@ -189,7 +189,7 @@ export class MyTaypage {
           preload="auto"
           style={{ opacity: '0', height: '0' }}
         >
-          <source src="/portifoliov4/static/audio/SouTodoLoveLove.mp3" type="audio/mp3" />
+          <source src="/portifoliov5/static/audio/SouTodoLoveLove.mp3" type="audio/mp3" />
           Seu navegador não suporta a tag de áudio.
         </audio>
 
@@ -236,7 +236,7 @@ export class MyTaypage {
             <div class={`title ${this.changeAnimation}`}>Que o nosso amor seja eterno e nossas memórias não se percam com o tempo e jamais se limite a apenas palavras</div>
 
             <div class={`leftContainer ${this.changeAnimation2}`}>
-                    <div class="imageSlider" style={{'--imageTay': `url('/portifoliov4/static/imgs/taynaraContador/${this.imagesArr[this.slideController]}?v=${10}')`}}
+                    <div class="imageSlider" style={{'--imageTay': `url('/portifoliov5/static/imgs/taynaraContador/${this.imagesArr[this.slideController]}?v=${10}')`}}
                     onClick={() => this.handleNextImage()}></div>
 
                 </div>
