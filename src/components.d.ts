@@ -213,6 +213,7 @@ declare global {
     };
     interface HTMLPortfolioTopbarElementEventMap {
         "cmdK": void;
+        "cmdAction": { action: string };
     }
     interface HTMLPortfolioTopbarElement extends Components.PortfolioTopbar, HTMLStencilElement {
         addEventListener<K extends keyof HTMLPortfolioTopbarElementEventMap>(type: K, listener: (this: HTMLPortfolioTopbarElement, ev: PortfolioTopbarCustomEvent<HTMLPortfolioTopbarElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
@@ -337,6 +338,7 @@ declare namespace LocalJSX {
           * @default 'pt'
          */
         "locale"?: Lang;
+        "onCmdAction"?: (event: PortfolioTopbarCustomEvent<{ action: string }>) => void;
         "onCmdK"?: (event: PortfolioTopbarCustomEvent<void>) => void;
     }
     interface PortfolioTrajectory {

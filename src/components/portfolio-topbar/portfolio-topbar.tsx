@@ -8,6 +8,7 @@ import { Lang, T, tx } from '../../utils/data';
 export class PortfolioTopbar {
   @Prop() locale: Lang = 'pt';
   @Event() cmdK: EventEmitter<void>;
+  @Event() cmdAction: EventEmitter<{ action: string }>;
 
   render() {
     return (
@@ -27,6 +28,11 @@ export class PortfolioTopbar {
             <span><b>RAFAEL MR</b> · v5 · 2026</span>
           </a>
           <nav class="nav">
+            {this.locale === 'pt' ? (
+                <div class="navlink lang" onClick={() => this.cmdAction.emit({ action: 'toggleLang'})}>EN.US</div>
+              ) : (
+                <div class="navlink lang" onClick={() => this.cmdAction.emit({ action: 'toggleLang'})}>PT.BR</div>
+              )}
             <a href="#ledgb"      class="navlink">{tx(T.nav.ledgb, this.locale)}</a>
             <a href="#stack"      class="navlink">{tx(T.nav.stack, this.locale)}</a>
             <a href="#projects"   class="navlink">{tx(T.nav.projects, this.locale)}</a>

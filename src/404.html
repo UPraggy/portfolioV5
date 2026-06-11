@@ -61,16 +61,19 @@ function redirecionarParaComponente() {
     path.includes('.jpg') ||
     path.includes('.png') ||
     path.includes('.css') ||
-    path.includes('.js')
+    path.includes('.js')  ||
+      path.includes('rafael-mr-cv') ||
+      path.includes('pt')  ||
+      path.includes('en')
   ) {
     return;
   }
 
-  const caminho = path.replace('/portifoliov4', '').substr(1);
+  const caminho = path.replace('/portifoliov5', '').substr(1);
   const paginas = caminho.split('/').filter(val => val !== '');
 
   if (paginas.length > 0) {
-    const destino = '/portifoliov4/?subPaginas=' + paginas.join(',');
+    const destino = '/portifoliov5/?subPaginas=' + paginas.join(',');
     console.log('Redirecionando para:', destino);
     window.location.replace(destino);
   }

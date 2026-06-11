@@ -82,7 +82,7 @@ export class AppPortfolio {
   render() {
     return (
       <Host class="page">
-        <portfolio-topbar locale={this.lang} onCmdK={() => (this.cmdkOpen = true)}></portfolio-topbar>
+        <portfolio-topbar locale={this.lang} onCmdK={() => (this.cmdkOpen = true)} onCmdAction={this.handleCmdAction}></portfolio-topbar>
         <portfolio-hero locale={this.lang}></portfolio-hero>
         <portfolio-manifesto locale={this.lang}></portfolio-manifesto>
         <portfolio-stack locale={this.lang}></portfolio-stack>

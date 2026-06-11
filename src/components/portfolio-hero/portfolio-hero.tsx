@@ -19,14 +19,21 @@ export class PortfolioHero {
           <span>v5 · 2026</span>
         </div>
         <h1 class="hero-name">
-          <span>Rafael</span>{' '}
-          <span class="it">Moreira</span>{' '}
-           {L === 'pt' ? (
-                <a class="herocurricullum" href="./rafael-mr-cv-ptbr.pdf">· Curriculum ↗</a>
-              ) : (
-                <a class="herocurricullum" href="./rafael-mr-cv.pdf">· Curriculum ↗</a>
-              )}
-          
+          <a
+            href={L === 'pt' ? "./portifoliov5/static/Curriculum/rafael-mr-cv-ptbr.pdf" : "./portifoliov5/static/Curriculum/rafael-mr-cv.pdf"}
+            class="hero-name-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Rafael</span>{' '}
+            <span class="it">Moreira</span>{' '}
+
+            {L === 'pt' ? (
+              <span class="herocurricullum">· Curriculum ↗</span>
+            ) : (
+              <span class="herocurricullum">· Resume ↗</span>
+            )}
+          </a>
         </h1>
         
         <div class="hero-grid">
