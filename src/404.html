@@ -52,31 +52,27 @@
 </body>
 <script>
 function redirecionarParaComponente() {
-  const path = window.location.pathname;
+  const path = decodeURIComponent(window.location.pathname);
 
-  // 🚫 IGNORA assets
-  if (
-    path.includes('/static/') ||
-    path.includes('.mp3') ||
-    path.includes('.jpg') ||
-    path.includes('.png') ||
-    path.includes('.css') ||
-    path.includes('.js')  ||
-      path.includes('rafael-mr-cv') ||
-      path.includes('pt')  ||
-      path.includes('en')
-  ) {
+  // 🚫 IGNORA assets (deixa o 404 real aparecer para arquivos)
+  if (/\.(mp3|jpe?g|png|svg|gif|webp|ico|css|js|map|pdf|woff2?|ttf|otf)$/i.test(path)) {
     return;
   }
 
-  const caminho = path.replace('/portifoliov5', '').substr(1);
-  const paginas = caminho.split('/').filter(val => val !== '');
+  // 1o segmento da rota, sem barras, em minusculo (dominio custom = raiz "/")
+  const seg = path.replace(/^\/+/, '').split('/')[0].toLowerCase();
 
-  if (paginas.length > 0) {
-    const destino = '/portifoliov5/?subPaginas=' + paginas.join(',');
-    console.log('Redirecionando para:', destino);
-    window.location.replace(destino);
+  // rotas conhecidas -> destino real, case-insensitive
+  const rotas = {
+    'nossoamor': '/nossoamor/',
+    'en': '/en/',
+  };
+
+  if (rotas[seg]) {
+    console.log('Redirecionando para:', rotas[seg]);
+    window.location.replace(rotas[seg]);
   }
+  // rota desconhecida: fica na pagina 404 (com o botao "Voltar ao inicio")
 }
 
 redirecionarParaComponente();
