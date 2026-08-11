@@ -146,6 +146,50 @@ export const PROJECTS: Project[] = [
     stack: ['LangChain', 'ChromaDB', 'Ollama', 'PostgreSQL', 'Node'],
   },
   {
+    id: 'saibh',
+    year: '2026—',
+    name: 'SaiBH',
+    role: { pt: 'Criador · produto (a dois)', en: 'Creator · product (built as a couple)' },
+    pitch: {
+      pt: 'Biblioteca de lugares pra sair em Belo Horizonte e região metropolitana. Lê o clima ao vivo e sugere o rolê certo pro tempo, com filtros pessoais — até "com bebê". Feito com a namorada, resolvendo uma dor real do casal, estudando Claude Code.',
+      en: 'A library of places to go out in Belo Horizonte and its metro area. It reads live weather and suggests the right spot for it, with personal filters — even "baby-friendly". Built with my girlfriend, solving a real couple\'s problem, while learning Claude Code.',
+    },
+    bullets: [
+      { pt: 'Sugestão pelo clima ao vivo + score de "match" com os seus filtros', en: 'Live weather-based suggestions + a "match" score against your filters' },
+      { pt: 'Filtros: categoria (bares a parques, família & bebê), período, preço, comida, cidade e bairro', en: 'Filters: category (bars to parks, family & baby), time, price, food, city and neighborhood' },
+      { pt: '"Me surpreenda" e aprendizado com os lugares marcados como "já fui"', en: '"Surprise me", and it learns from places you mark as "been there"' },
+      { pt: 'Dado do local + nota do Google + "aberto agora" e rota no Maps', en: 'Place data + Google rating + "open now" and Maps routing' },
+    ],
+    stack: ['React', 'Node', 'REST', 'Weather API', 'Claude Code'],
+    metrics: [
+      { v: '3373', l: { pt: 'lugares na base', en: 'places in the base' } },
+      { v: '12',   l: { pt: 'categorias', en: 'categories' } },
+      { v: 'RMBH', l: { pt: 'BH + região metrop.', en: 'BH + metro area' } },
+    ],
+  },
+  {
+    id: 'escritorio',
+    year: '2026',
+    name: { pt: 'Escritório Online', en: 'Escritório Online' },
+    role: { pt: 'Criador · produto social', en: 'Creator · social product' },
+    pitch: {
+      pt: 'PWA de inclusão digital que nasceu pra ajudar meus pais — e quem está começando na tecnologia. O onboarding se adapta ao momento de vida e à idade, e a fonte aumenta com um toque. Aprender do zero, no seu ritmo. Construído estudando Claude Code.',
+      en: 'A digital-inclusion PWA built to help my parents — and anyone starting out with technology. Onboarding adapts to life stage and age, and font size grows with one tap. Learn from zero, at your own pace. Built while learning Claude Code.',
+    },
+    bullets: [
+      { pt: 'Onboarding que adapta a trilha ao momento de vida + fonte acessível', en: 'Onboarding that adapts the track to life stage + accessible font size' },
+      { pt: '5 módulos: Computador, Celular, Mercado & Especialização (Excel), Segurança Digital e Inglês', en: '5 modules: Computer, Mobile, Market & Upskilling (Excel), Digital Security and English' },
+      { pt: 'Gamificação: trilhas, missões, XP, níveis, caixa diária e troféus', en: 'Gamification: tracks, missions, XP, levels, a daily box and trophies' },
+      { pt: 'Mentor integrado e agenda pra manter o ritmo de estudo', en: 'Built-in mentor and a schedule to keep the study pace' },
+    ],
+    stack: ['React', 'PWA', 'Node', 'Gamification', 'Claude Code'],
+    metrics: [
+      { v: '5',    l: { pt: 'módulos', en: 'modules' } },
+      { v: '15',   l: { pt: 'trilhas / módulo', en: 'tracks / module' } },
+      { v: 'A11y', l: { pt: 'fonte adaptável', en: 'adaptive font' } },
+    ],
+  },
+  {
     id: 'babita',
     year: 'Jul/2023—',
     name: { pt: 'Babita · ecossistema interno', en: 'Babita · internal ecosystem' },
@@ -350,7 +394,7 @@ export const T = {
   projects: {
     num:   { pt: '04 / PROJETOS', en: '04 / PROJECTS' } as Str,
     title: { pt: 'O que <em>eu</em> mantenho.', en: 'What <em>I</em> maintain.' } as Str,
-    sub:   { pt: 'Produtos meus  LEDGB, VisualInspector, QueryBoard  mais o ecossistema da Babita e o trabalho voluntário. Cada um resolve uma coisa diferente, e juntos cobrem dev, infra, design e comunicação.', en: 'My own products  LEDGB, VisualInspector, QueryBoard  plus the Babita ecosystem and volunteer work. Each one solves something different, and together they cover dev, infra, design and communication.' } as Str,
+    sub:   { pt: 'Produtos meus  LEDGB, VisualInspector, QueryBoard, SaiBH, Escritório Online  mais o ecossistema da Babita e o trabalho voluntário. Cada um resolve uma coisa diferente, e juntos cobrem dev, infra, design e comunicação.', en: 'My own products  LEDGB, VisualInspector, QueryBoard, SaiBH, Escritório Online  plus the Babita ecosystem and volunteer work. Each one solves something different, and together they cover dev, infra, design and communication.' } as Str,
   },
   trajectory: {
     num:   { pt: '05 / TRAJETÓRIA', en: '05 / TRAJECTORY' } as Str,
