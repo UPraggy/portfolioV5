@@ -58,8 +58,8 @@ export const RAFAEL = {
     en: 'I build the whole environment  code, server, network, everything in between.',
   } as L,
   bio: {
-    pt: 'Full Stack pleno na Babita desde Jul/2023, mantendo praticamente todo o ecossistema da empresa com uma equipe pequena: desenvolvimento, servidores, redes, segurança, suporte. Cursando Ciências da Computação na Estácio BH desde 2020. Autodidata, aprendo fazendo, resolvo problemas reais. Investindo forte em comunicação como diferencial.',
-    en: 'Mid-level Full Stack at Babita since Jul/2023, running the company\'s whole ecosystem with a small team: dev, servers, networks, security, support. Computer Science at Estácio BH since 2020. Self-taught, learn-by-doing, solve real problems. Investing in communication as a differentiator.',
+    pt: 'Full Stack pleno na Babita desde Jul/2023, mantendo praticamente todo o ecossistema com uma equipe pequena: desenvolvimento, servidores, redes, segurança, suporte. Cursando Ciências da Computação na Estácio BH desde 2020. Nos últimos meses mergulhei em IA e, em vez de só estudar, construí: o LEDGB (agente de dev local-first) e o VisualInspector (242 ferramentas que dão olhos, mãos e memória a uma IA). Autodidata, aprendo fazendo, resolvo problemas reais, e invisto forte em comunicação como diferencial.',
+    en: 'Mid-level Full Stack at Babita since Jul/2023, running practically the whole ecosystem with a small team: dev, servers, networks, security, support. Computer Science at Estácio BH since 2020. Over the last months I dove into AI and, instead of just studying it, I built: LEDGB (a local-first dev agent) and VisualInspector (242 tools that give an AI eyes, hands and memory). Self-taught, learn-by-doing, I solve real problems and invest heavily in communication as a differentiator.',
   } as L,
 };
 
@@ -114,19 +114,20 @@ export const PROJECTS: Project[] = [
     name: 'VisualInspector',
     role: { pt: 'Criador · produto', en: 'Creator · product' },
     pitch: {
-      pt: 'Ferramenta de análise visual e de UX que eu uso pra auditar interfaces  inclusive este portfólio. Três interfaces sobre o mesmo motor: servidor MCP pra agentes de IA, API REST e app Electron.',
-      en: 'Visual and UX analysis tool I use to audit interfaces  including this portfolio. Three interfaces over one engine: an MCP server for AI agents, a REST API and an Electron app.',
+      pt: 'Uma camada de 242 ferramentas que dá a qualquer IA o que ela não tem sozinha: olhos pra ver design, mãos pra operar o computador e memória que não estoura o contexto. Uso pra auditar interfaces — inclusive este portfólio. Três interfaces sobre o mesmo motor: servidor MCP, API REST (POST /api/tool/:name) e app Electron.',
+      en: 'A layer of 242 tools that gives any AI what it lacks on its own: eyes to read design, hands to operate the computer and memory that doesn\'t blow the context window. I use it to audit interfaces — including this portfolio. Three interfaces over one engine: an MCP server, a REST API (POST /api/tool/:name) and an Electron app.',
     },
     bullets: [
-      { pt: 'MCP + REST + Electron sobre um único motor de análise', en: 'MCP + REST + Electron over a single analysis engine' },
-      { pt: 'Screenshots responsivos, contraste, espaçamento, SEO e a11y', en: 'Responsive screenshots, contrast, spacing, SEO and a11y' },
-      { pt: 'Busca de ferramentas por intenção, pensada pra agentes', en: 'Intent-based tool search, designed for agents' },
+      { pt: 'VER: extrai cores, tipografia e tokens; audita a11y, SEO e performance', en: 'SEE: extract colors, typography and tokens; audit a11y, SEO and performance' },
+      { pt: 'AGIR: lê e edita código, controla um navegador e opera o sistema', en: 'ACT: read and edit code, drive a browser and operate the system' },
+      { pt: 'CRIAR: gera .pptx, PDF, imagens e gráficos de forma nativa, sem nuvem', en: 'CREATE: generate .pptx, PDF, images and charts natively, no cloud' },
+      { pt: 'LEMBRAR: memória BM25 que devolve só o trecho certo, sob demanda', en: 'REMEMBER: BM25 memory that returns just the right chunk, on demand' },
     ],
     stack: ['Node', 'Electron', 'MCP', 'REST', 'Playwright'],
     metrics: [
-      { v: '197', l: { pt: 'ferramentas', en: 'tools' } },
+      { v: '242', l: { pt: 'ferramentas', en: 'tools' } },
+      { v: '14',  l: { pt: 'módulos de capacidade', en: 'capability modules' } },
       { v: '3',   l: { pt: 'interfaces (MCP·REST·app)', en: 'interfaces (MCP·REST·app)' } },
-      { v: 'v2',  l: { pt: 'em produção', en: 'in production' } },
     ],
   },
   {
@@ -273,7 +274,7 @@ export const TIMELINE: TimelineRow[] = [
   { y: 'Abr/2024', t: { pt: 'Portfólio V3 · React', en: 'Portfolio V3 · React' }, d: { pt: 'Refatorando a forma de me apresentar.', en: 'Refactoring how I present myself.' } },
   { y: 'Jul/2024', t: 'Igreja São Pedro V2', d: { pt: 'V1 estava velho. Refiz.', en: 'V1 had aged. Rebuilt it.' } },
   { y: '2025',     t: { pt: 'Portfólio V4 + Canal de YouTube', en: 'Portfolio V4 + YouTube channel' }, d: { pt: 'Stencil.js + Web Components. Início da trilha Linux Essencial para Servidores no YouTube.', en: 'Stencil.js + Web Components. Start of the Essential Linux for Servers track on YouTube.' } },
-  { y: '2026',     t: { pt: 'LEDGB Orchestrator + Portfólio V5', en: 'LEDGB Orchestrator + Portfolio V5' }, d: { pt: 'Lanço o LEDGB  agente de dev autônomo, local-first. E o portfólio que você está lendo.', en: 'Launching LEDGB  an autonomous, local-first dev agent. And the portfolio you\'re reading.' } },
+  { y: '2026',     t: { pt: 'Onda de IA: LEDGB, VisualInspector + apps com Claude Code', en: 'AI wave: LEDGB, VisualInspector + apps with Claude Code' }, d: { pt: 'Lanço o LEDGB — agente de dev autônomo, local-first — e o VisualInspector, 242 ferramentas que dão olhos, mãos e memória a uma IA. Publico o SaiBH e o Escritório Online, feitos estudando Claude Code, e o portfólio V5 que você está lendo.', en: 'Launching LEDGB — an autonomous, local-first dev agent — and VisualInspector, 242 tools that give an AI eyes, hands and memory. Shipping SaiBH and Escritório Online, built while learning Claude Code, and the V5 portfolio you\'re reading.' } },
 ];
 
 export const PRINCIPLES: Principle[] = [
