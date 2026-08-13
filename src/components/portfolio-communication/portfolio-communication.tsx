@@ -45,7 +45,7 @@ export class PortfolioCommunication {
               ))}
             </ol>
 
-            <p class="muted-2 yt-roadmap">{tx(T.comm.ytRoadmap, L)}</p>
+            <p class="muted-2 yt-roadmap" innerHTML={tx(T.comm.ytRoadmap, L)}></p>
 
             <a class="cta" href="https://youtube.com/@RafaelMRDev" target="_blank" rel="noreferrer">
               {tx(T.comm.ytCta, L)}

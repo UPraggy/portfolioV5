@@ -300,6 +300,16 @@ section.sect + section.sect { border-top: 1px solid var(--hairline); }
 }
 .proj:last-child { border-bottom: 1px solid var(--hairline); }
 .proj:hover { background: var(--bg-1); padding-left: 12px; }
+/* cards com link externo (SaiBH, Escritorio): clicaveis, com seta de afordancia */
+.proj-link { cursor: pointer; text-decoration: none; color: inherit; }
+.proj-link .name::after {
+  content: "\2197"; font-family: var(--mono); font-size: 0.42em; color: var(--accent);
+  margin-left: 0.4em; vertical-align: 0.28em; opacity: 0.55; display: inline-block;
+  transition: opacity .2s, transform .2s;
+}
+.proj-link:hover .name { color: var(--accent); }
+.proj-link:hover .name::after { opacity: 1; transform: translate(2px, -2px); }
+.proj-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
 .proj .yr { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; color: var(--fg-3); padding-top: 6px; }
 .proj .name { font-family: var(--serif); font-size: clamp(24px, 2.6vw, 34px); line-height: 1.1; color: var(--fg); letter-spacing: -0.015em; }
 .proj .name em { color: var(--accent); font-style: italic; }

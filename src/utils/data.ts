@@ -23,6 +23,7 @@ export interface Project {
   bullets?: Str[];
   stack: string[];
   metrics?: ProjectMetric[];
+  link?: string; // URL externa; quando presente o card vira clicavel (abre em nova aba)
 }
 
 export interface TimelineRow { y: string; t: Str; d: Str; }
@@ -167,6 +168,7 @@ export const PROJECTS: Project[] = [
       { v: '12',   l: { pt: 'categorias', en: 'categories' } },
       { v: 'RMBH', l: { pt: 'BH + região metrop.', en: 'BH + metro area' } },
     ],
+    link: 'https://saibh.rafaelmr.com.br',
   },
   {
     id: 'escritorio',
@@ -189,6 +191,7 @@ export const PROJECTS: Project[] = [
       { v: '15',   l: { pt: 'trilhas / módulo', en: 'tracks / module' } },
       { v: 'A11y', l: { pt: 'fonte adaptável', en: 'adaptive font' } },
     ],
+    link: 'https://lnoffice.rafaelmr.com.br',
   },
   {
     id: 'babita',
@@ -406,10 +409,10 @@ export const T = {
     num:   { pt: '06 / COMUNICAÇÃO', en: '06 / COMMUNICATION' } as Str,
     title: { pt: 'Comunicação como <em>diferencial</em>.', en: 'Communication as a <em>differentiator</em>.' } as Str,
     sub:   { pt: 'Tecnologia continua sendo a base. Mas transformar conhecimento em comunicação clara  isso tem se tornado a parte mais importante da jornada. Por isso o canal.', en: 'Technology is still the foundation. But turning knowledge into clear communication  that has become the most important part of the journey. Hence the channel.' } as Str,
-    ytStat:   { pt: 'Canal · 2025', en: 'Channel · 2025' } as Str,
+    ytStat:   { pt: 'Canal · 18 vídeos · 156 inscritos', en: 'Channel · 18 videos · 156 subscribers' } as Str,
     ytTitle:  { pt: 'Trilha <em>Linux Essencial</em><br /> para Servidores.', en: '<em>Essential Linux</em><br /> for Servers track.' } as Str,
     ytLede:   { pt: 'Do fundamento ao cenário real. Demonstração prática, processo acontecendo em tempo real  não vídeo estático. A trilha inicial cobre 11 módulos:', en: 'From fundamentals to real-world scenarios. Hands-on, process happening in real time  not a static video. The initial track covers 11 modules:' } as Str,
-    ytRoadmap:{ pt: '+ dois cursos avançados no roadmap: infraestrutura, automação e desenvolvimento aplicado.', en: '+ two advanced courses on the roadmap: infrastructure, automation and applied development.' } as Str,
+    ytRoadmap:{ pt: 'Já no ar também a trilha de <em>Bash</em> (scripting do zero) — e dois cursos avançados no roadmap: infraestrutura, automação e desenvolvimento aplicado.', en: 'A <em>Bash</em> track (scripting from scratch) is already live too — plus two advanced courses on the roadmap: infrastructure, automation and applied development.' } as Str,
     ytCta:    { pt: 'ASSISTIR NO YOUTUBE →', en: 'WATCH ON YOUTUBE →' } as Str,
     metaEyebrow: { pt: 'O MAIOR APRENDIZADO NÃO FOI TÉCNICO', en: 'THE BIGGEST LESSON WASN\'T TECHNICAL' } as Str,
     metaLede: { pt: 'Gravar, assistir e revisar a própria comunicação é o exercício profissional mais rico que descobri esse ano.', en: 'Recording, watching and reviewing my own communication is the richest professional exercise I found this year.' } as Str,
