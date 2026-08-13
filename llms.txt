@@ -16,9 +16,10 @@
 
 - LEDGB Orchestrator: IDE/agente autonomo de desenvolvimento, local-first, roda no PC
   com IA gratis e memoria de projeto entre sessoes.
-- VisualInspector: ferramenta de analise visual e de UX (MCP + REST + Electron sobre um
-  unico motor, ~197 ferramentas). Audita interfaces: responsividade, contraste,
-  espacamento, SEO e a11y.
+- VisualInspector: camada de 242 ferramentas que da a qualquer IA olhos pra ver design,
+  maos pra operar o computador e memoria que nao estoura o contexto. MCP + REST
+  (POST /api/tool/:name) + Electron sobre um unico motor. Audita interfaces, gera
+  documentos nativos (.pptx/PDF/imagem/grafico) e controla navegador e sistema.
 - QueryBoard: RAG local de ponta a ponta  embeddings no Ollama, vetores no ChromaDB,
   orquestracao com LangChain e metadados no PostgreSQL. Dados nao saem do PC.
 
