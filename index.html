@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="hydrated" data-accent="amber" data-stencil-build="bgkwy1r9" lang="pt-BR">
+<html class="hydrated" data-accent="amber" data-stencil-build="vq877qrm" lang="pt-BR">
   <head>
     <meta charset="utf-8">
 
@@ -71,7 +71,7 @@ name="twitter:description">
 
     <meta content="https://rafaelmr.com.br/assets/og.svg" name="twitter:image">
 
-    <link href="/build/p-bf122212.js?v=bf12221238" rel="modulepreload">
+    <link href="/build/p-f72ada0a.js?v=f72ada0a86" rel="modulepreload">
 
     <link href="/build/p-oSJmBozO.js?v=935c956da7" rel="modulepreload">
 <script type="application/ld+json">
@@ -119,7 +119,7 @@ name="twitter:description">
 
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Geist:wght@300;400;500;600;700&amp;display=swap"
 rel="stylesheet">
-<script data-resources-url="/build/" data-stencil data-stencil-namespace="portfoliov5" src="/build/p-bf122212.js?v=bf12221238"
+<script data-resources-url="/build/" data-stencil data-stencil-namespace="portfoliov5" src="/build/p-f72ada0a.js?v=f72ada0a86"
 type="module"></script>
 <script data-stencil nomodule src="/build/portfoliov5.js?v=e533ce11a2"></script>
 
@@ -927,7 +927,7 @@ rel="noopener noreferrer" target="_blank">
               </h2>
               <div c-id="12.4.1.2" class="sub">
                 <!--t.12.5.2.0-->
-                Produtos meus LEDGB, VisualInspector, QueryBoard, SaiBH, Escritório Online mais o ecossistema da Babita e o trabalho voluntário. Cada um resolve uma coisa diferente, e juntos cobrem dev, infra, design e comunicação.
+                Produtos meus LEDGB, VisualInspector, AutoTrade, QueryBoard, SaiBH, Escritório Online mais o ecossistema da Babita e o trabalho voluntário. Cada um resolve uma coisa diferente, e juntos cobrem dev, infra, design e comunicação.
               </div>
             </div>
           </portfolio-sect-head>
@@ -1026,8 +1026,7 @@ rel="noopener noreferrer" target="_blank">
                 </span>
               </div>
             </div>
-            <a c-id="11.50.2.1" class="proj proj-link" href="https://saibh.rafaelmr.com.br" rel="noreferrer"
-target="_blank">
+            <div c-id="11.50.2.1" class="proj">
               <div c-id="11.51.3.0" class="yr">
                 <!--t.11.52.4.0-->
                 2026—
@@ -1035,505 +1034,626 @@ target="_blank">
               <div c-id="11.53.3.1">
                 <div c-id="11.54.4.0" class="name">
                   <!--t.11.55.5.0-->
-                  SaiBH
+                  AutoTrade
                 </div>
                 <div c-id="11.56.4.1" class="role">
                   <!--t.11.57.5.0-->
-                  Criador · produto (a dois)
+                  Criador · sistema em produção
                 </div>
               </div>
               <div c-id="11.58.3.2" class="pitch">
                 <p c-id="11.59.4.0" class="pitch-lede">
                   <!--t.11.60.5.0-->
-                  Biblioteca de lugares pra sair em Belo Horizonte e região metropolitana. Lê o clima ao vivo e sugere o rolê certo pro tempo, com filtros pessoais — até "com bebê". Feito com a namorada, resolvendo uma dor real do casal, estudando Claude Code.
+                  Um celular Android reaproveitado como servidor: ele roda 24/7 dois motores de operação em cripto, painel próprio, bot de Telegram e uma IA conselheira. O interessante não é o bot, é tratar um smartphone como máquina ARM de borda e exigir dele o que se exige de um servidor: processo supervisionado, persistência auditável, testes rodando no próprio aparelho e uma tela que explica cada decisão.
                 </p>
                 <ul c-id="11.61.4.1" class="proj-bul">
                   <li c-id="11.62.5.0">
                     <!--t.11.63.6.0-->
-                    Sugestão pelo clima ao vivo + score de "match" com os seus filtros
+                    Android → Termux → Ubuntu em PRoot → Node 22 → PM2, com acesso externo por túnel e sem abrir porta no roteador
                   </li>
                   <li c-id="11.64.5.1">
                     <!--t.11.65.6.0-->
-                    Filtros: categoria (bares a parques, família &amp; bebê), período, preço, comida, cidade e bairro
+                    Dois motores isolados por desenho: config, banco e livro separados, e os números nunca se somam — sem essa fronteira não se sabe qual dos dois funciona
                   </li>
                   <li c-id="11.66.5.2">
                     <!--t.11.67.6.0-->
-                    "Me surpreenda" e aprendizado com os lugares marcados como "já fui"
+                    Observabilidade como requisito: a tela diz por que NÃO comprou, com o número medido ao lado do limite que barrou
                   </li>
                   <li c-id="11.68.5.3">
                     <!--t.11.69.6.0-->
+                    Persistência antes de feature: SQLite em WAL, diário append-only que reconstrói o banco e reconciliação ordem a ordem com a corretora
+                  </li>
+                  <li c-id="11.70.5.4">
+                    <!--t.11.71.6.0-->
+                    IA conselheira, não juiz: comenta cada compra, mas nunca aprova, reprova nem bloqueia, e falha ou timeout dela não afeta a operação
+                  </li>
+                  <li c-id="11.72.5.5">
+                    <!--t.11.73.6.0-->
+                    Decisão de produto: toda mudança de parâmetro é medida contra o livro real antes de valer, e fica escrita ao lado do parâmetro
+                  </li>
+                </ul>
+                <div c-id="11.74.4.2" class="proj-metrics">
+                  <div c-id="11.75.5.0" class="pm">
+                    <span c-id="11.76.6.0" class="pm-v">
+                      <!--t.11.77.7.0-->
+                      791
+                    </span>
+                    <span c-id="11.78.6.1" class="pm-l">
+                      <!--t.11.79.7.0-->
+                      testes no próprio celular
+                    </span>
+                  </div>
+                  <div c-id="11.80.5.1" class="pm">
+                    <span c-id="11.81.6.0" class="pm-v">
+                      <!--t.11.82.7.0-->
+                      2
+                    </span>
+                    <span c-id="11.83.6.1" class="pm-l">
+                      <!--t.11.84.7.0-->
+                      motores isolados
+                    </span>
+                  </div>
+                  <div c-id="11.85.5.2" class="pm">
+                    <span c-id="11.86.6.0" class="pm-v">
+                      <!--t.11.87.7.0-->
+                      15
+                    </span>
+                    <span c-id="11.88.6.1" class="pm-l">
+                      <!--t.11.89.7.0-->
+                      comandos no Telegram
+                    </span>
+                  </div>
+                  <div c-id="11.90.5.3" class="pm">
+                    <span c-id="11.91.6.0" class="pm-v">
+                      <!--t.11.92.7.0-->
+                      24/7
+                    </span>
+                    <span c-id="11.93.6.1" class="pm-l">
+                      <!--t.11.94.7.0-->
+                      em produção, ARM
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div c-id="11.95.3.3" class="right">
+                <span c-id="11.96.4.0" class="chip">
+                  <!--t.11.97.5.0-->
+                  Node 22
+                </span>
+                <span c-id="11.98.4.1" class="chip">
+                  <!--t.11.99.5.0-->
+                  Express
+                </span>
+                <span c-id="11.100.4.2" class="chip">
+                  <!--t.11.101.5.0-->
+                  SQLite (WAL)
+                </span>
+                <span c-id="11.102.4.3" class="chip">
+                  <!--t.11.103.5.0-->
+                  PM2
+                </span>
+                <span c-id="11.104.4.4" class="chip">
+                  <!--t.11.105.5.0-->
+                  Termux/PRoot
+                </span>
+                <span c-id="11.106.4.5" class="chip">
+                  <!--t.11.107.5.0-->
+                  Telegram Bot
+                </span>
+                <span c-id="11.108.4.6" class="chip">
+                  <!--t.11.109.5.0-->
+                  Cloudflare Tunnel
+                </span>
+              </div>
+            </div>
+            <a c-id="11.110.2.2" class="proj proj-link" href="https://saibh.rafaelmr.com.br" rel="noreferrer"
+target="_blank">
+              <div c-id="11.111.3.0" class="yr">
+                <!--t.11.112.4.0-->
+                2026—
+              </div>
+              <div c-id="11.113.3.1">
+                <div c-id="11.114.4.0" class="name">
+                  <!--t.11.115.5.0-->
+                  SaiBH
+                </div>
+                <div c-id="11.116.4.1" class="role">
+                  <!--t.11.117.5.0-->
+                  Criador · produto (a dois)
+                </div>
+              </div>
+              <div c-id="11.118.3.2" class="pitch">
+                <p c-id="11.119.4.0" class="pitch-lede">
+                  <!--t.11.120.5.0-->
+                  Biblioteca de lugares pra sair em Belo Horizonte e região metropolitana. Lê o clima ao vivo e sugere o rolê certo pro tempo, com filtros pessoais — até "com bebê". Feito com a namorada, resolvendo uma dor real do casal, estudando Claude Code.
+                </p>
+                <ul c-id="11.121.4.1" class="proj-bul">
+                  <li c-id="11.122.5.0">
+                    <!--t.11.123.6.0-->
+                    Sugestão pelo clima ao vivo + score de "match" com os seus filtros
+                  </li>
+                  <li c-id="11.124.5.1">
+                    <!--t.11.125.6.0-->
+                    Filtros: categoria (bares a parques, família &amp; bebê), período, preço, comida, cidade e bairro
+                  </li>
+                  <li c-id="11.126.5.2">
+                    <!--t.11.127.6.0-->
+                    "Me surpreenda" e aprendizado com os lugares marcados como "já fui"
+                  </li>
+                  <li c-id="11.128.5.3">
+                    <!--t.11.129.6.0-->
                     Dado do local + nota do Google + "aberto agora" e rota no Maps
                   </li>
                 </ul>
-                <div c-id="11.70.4.2" class="proj-metrics">
-                  <div c-id="11.71.5.0" class="pm">
-                    <span c-id="11.72.6.0" class="pm-v">
-                      <!--t.11.73.7.0-->
+                <div c-id="11.130.4.2" class="proj-metrics">
+                  <div c-id="11.131.5.0" class="pm">
+                    <span c-id="11.132.6.0" class="pm-v">
+                      <!--t.11.133.7.0-->
                       3373
                     </span>
-                    <span c-id="11.74.6.1" class="pm-l">
-                      <!--t.11.75.7.0-->
+                    <span c-id="11.134.6.1" class="pm-l">
+                      <!--t.11.135.7.0-->
                       lugares na base
                     </span>
                   </div>
-                  <div c-id="11.76.5.1" class="pm">
-                    <span c-id="11.77.6.0" class="pm-v">
-                      <!--t.11.78.7.0-->
+                  <div c-id="11.136.5.1" class="pm">
+                    <span c-id="11.137.6.0" class="pm-v">
+                      <!--t.11.138.7.0-->
                       12
                     </span>
-                    <span c-id="11.79.6.1" class="pm-l">
-                      <!--t.11.80.7.0-->
+                    <span c-id="11.139.6.1" class="pm-l">
+                      <!--t.11.140.7.0-->
                       categorias
                     </span>
                   </div>
-                  <div c-id="11.81.5.2" class="pm">
-                    <span c-id="11.82.6.0" class="pm-v">
-                      <!--t.11.83.7.0-->
+                  <div c-id="11.141.5.2" class="pm">
+                    <span c-id="11.142.6.0" class="pm-v">
+                      <!--t.11.143.7.0-->
                       RMBH
                     </span>
-                    <span c-id="11.84.6.1" class="pm-l">
-                      <!--t.11.85.7.0-->
+                    <span c-id="11.144.6.1" class="pm-l">
+                      <!--t.11.145.7.0-->
                       BH + região metrop.
                     </span>
                   </div>
                 </div>
               </div>
-              <div c-id="11.86.3.3" class="right">
-                <span c-id="11.87.4.0" class="chip">
-                  <!--t.11.88.5.0-->
+              <div c-id="11.146.3.3" class="right">
+                <span c-id="11.147.4.0" class="chip">
+                  <!--t.11.148.5.0-->
                   React
                 </span>
-                <span c-id="11.89.4.1" class="chip">
-                  <!--t.11.90.5.0-->
+                <span c-id="11.149.4.1" class="chip">
+                  <!--t.11.150.5.0-->
                   Node
                 </span>
-                <span c-id="11.91.4.2" class="chip">
-                  <!--t.11.92.5.0-->
+                <span c-id="11.151.4.2" class="chip">
+                  <!--t.11.152.5.0-->
                   REST
                 </span>
-                <span c-id="11.93.4.3" class="chip">
-                  <!--t.11.94.5.0-->
+                <span c-id="11.153.4.3" class="chip">
+                  <!--t.11.154.5.0-->
                   Weather API
                 </span>
-                <span c-id="11.95.4.4" class="chip">
-                  <!--t.11.96.5.0-->
+                <span c-id="11.155.4.4" class="chip">
+                  <!--t.11.156.5.0-->
                   Claude Code
                 </span>
               </div>
             </a>
-            <a c-id="11.97.2.2" class="proj proj-link" href="https://lnoffice.rafaelmr.com.br" rel="noreferrer"
+            <a c-id="11.157.2.3" class="proj proj-link" href="https://lnoffice.rafaelmr.com.br" rel="noreferrer"
 target="_blank">
-              <div c-id="11.98.3.0" class="yr">
-                <!--t.11.99.4.0-->
+              <div c-id="11.158.3.0" class="yr">
+                <!--t.11.159.4.0-->
                 2026
               </div>
-              <div c-id="11.100.3.1">
-                <div c-id="11.101.4.0" class="name">
-                  <!--t.11.102.5.0-->
+              <div c-id="11.160.3.1">
+                <div c-id="11.161.4.0" class="name">
+                  <!--t.11.162.5.0-->
                   Escritório Online
                 </div>
-                <div c-id="11.103.4.1" class="role">
-                  <!--t.11.104.5.0-->
+                <div c-id="11.163.4.1" class="role">
+                  <!--t.11.164.5.0-->
                   Criador · produto social
                 </div>
               </div>
-              <div c-id="11.105.3.2" class="pitch">
-                <p c-id="11.106.4.0" class="pitch-lede">
-                  <!--t.11.107.5.0-->
+              <div c-id="11.165.3.2" class="pitch">
+                <p c-id="11.166.4.0" class="pitch-lede">
+                  <!--t.11.167.5.0-->
                   PWA de inclusão digital que nasceu pra ajudar meus pais — e quem está começando na tecnologia. O onboarding se adapta ao momento de vida e à idade, e a fonte aumenta com um toque. Aprender do zero, no seu ritmo. Construído estudando Claude Code.
                 </p>
-                <ul c-id="11.108.4.1" class="proj-bul">
-                  <li c-id="11.109.5.0">
-                    <!--t.11.110.6.0-->
+                <ul c-id="11.168.4.1" class="proj-bul">
+                  <li c-id="11.169.5.0">
+                    <!--t.11.170.6.0-->
                     Onboarding que adapta a trilha ao momento de vida + fonte acessível
                   </li>
-                  <li c-id="11.111.5.1">
-                    <!--t.11.112.6.0-->
+                  <li c-id="11.171.5.1">
+                    <!--t.11.172.6.0-->
                     5 módulos: Computador, Celular, Mercado &amp; Especialização (Excel), Segurança Digital e Inglês
                   </li>
-                  <li c-id="11.113.5.2">
-                    <!--t.11.114.6.0-->
+                  <li c-id="11.173.5.2">
+                    <!--t.11.174.6.0-->
                     Gamificação: trilhas, missões, XP, níveis, caixa diária e troféus
                   </li>
-                  <li c-id="11.115.5.3">
-                    <!--t.11.116.6.0-->
+                  <li c-id="11.175.5.3">
+                    <!--t.11.176.6.0-->
                     Mentor integrado e agenda pra manter o ritmo de estudo
                   </li>
                 </ul>
-                <div c-id="11.117.4.2" class="proj-metrics">
-                  <div c-id="11.118.5.0" class="pm">
-                    <span c-id="11.119.6.0" class="pm-v">
-                      <!--t.11.120.7.0-->
+                <div c-id="11.177.4.2" class="proj-metrics">
+                  <div c-id="11.178.5.0" class="pm">
+                    <span c-id="11.179.6.0" class="pm-v">
+                      <!--t.11.180.7.0-->
                       5
                     </span>
-                    <span c-id="11.121.6.1" class="pm-l">
-                      <!--t.11.122.7.0-->
+                    <span c-id="11.181.6.1" class="pm-l">
+                      <!--t.11.182.7.0-->
                       módulos
                     </span>
                   </div>
-                  <div c-id="11.123.5.1" class="pm">
-                    <span c-id="11.124.6.0" class="pm-v">
-                      <!--t.11.125.7.0-->
+                  <div c-id="11.183.5.1" class="pm">
+                    <span c-id="11.184.6.0" class="pm-v">
+                      <!--t.11.185.7.0-->
                       15
                     </span>
-                    <span c-id="11.126.6.1" class="pm-l">
-                      <!--t.11.127.7.0-->
+                    <span c-id="11.186.6.1" class="pm-l">
+                      <!--t.11.187.7.0-->
                       trilhas / módulo
                     </span>
                   </div>
-                  <div c-id="11.128.5.2" class="pm">
-                    <span c-id="11.129.6.0" class="pm-v">
-                      <!--t.11.130.7.0-->
+                  <div c-id="11.188.5.2" class="pm">
+                    <span c-id="11.189.6.0" class="pm-v">
+                      <!--t.11.190.7.0-->
                       A11y
                     </span>
-                    <span c-id="11.131.6.1" class="pm-l">
-                      <!--t.11.132.7.0-->
+                    <span c-id="11.191.6.1" class="pm-l">
+                      <!--t.11.192.7.0-->
                       fonte adaptável
                     </span>
                   </div>
                 </div>
               </div>
-              <div c-id="11.133.3.3" class="right">
-                <span c-id="11.134.4.0" class="chip">
-                  <!--t.11.135.5.0-->
+              <div c-id="11.193.3.3" class="right">
+                <span c-id="11.194.4.0" class="chip">
+                  <!--t.11.195.5.0-->
                   React
                 </span>
-                <span c-id="11.136.4.1" class="chip">
-                  <!--t.11.137.5.0-->
+                <span c-id="11.196.4.1" class="chip">
+                  <!--t.11.197.5.0-->
                   PWA
                 </span>
-                <span c-id="11.138.4.2" class="chip">
-                  <!--t.11.139.5.0-->
+                <span c-id="11.198.4.2" class="chip">
+                  <!--t.11.199.5.0-->
                   Node
                 </span>
-                <span c-id="11.140.4.3" class="chip">
-                  <!--t.11.141.5.0-->
+                <span c-id="11.200.4.3" class="chip">
+                  <!--t.11.201.5.0-->
                   Gamification
                 </span>
-                <span c-id="11.142.4.4" class="chip">
-                  <!--t.11.143.5.0-->
+                <span c-id="11.202.4.4" class="chip">
+                  <!--t.11.203.5.0-->
                   Claude Code
                 </span>
               </div>
             </a>
-            <div c-id="11.144.2.3" class="proj">
-              <div c-id="11.145.3.0" class="yr">
-                <!--t.11.146.4.0-->
+            <div c-id="11.204.2.4" class="proj">
+              <div c-id="11.205.3.0" class="yr">
+                <!--t.11.206.4.0-->
                 2026
               </div>
-              <div c-id="11.147.3.1">
-                <div c-id="11.148.4.0" class="name">
-                  <!--t.11.149.5.0-->
+              <div c-id="11.207.3.1">
+                <div c-id="11.208.4.0" class="name">
+                  <!--t.11.209.5.0-->
                   Este portfólio · V5
                 </div>
-                <div c-id="11.150.4.1" class="role">
-                  <!--t.11.151.5.0-->
+                <div c-id="11.210.4.1" class="role">
+                  <!--t.11.211.5.0-->
                   Próprio · open source
                 </div>
               </div>
-              <div c-id="11.152.3.2" class="pitch">
-                <p c-id="11.153.4.0" class="pitch-lede">
-                  <!--t.11.154.5.0-->
+              <div c-id="11.212.3.2" class="pitch">
+                <p c-id="11.213.4.0" class="pitch-lede">
+                  <!--t.11.214.5.0-->
                   O site que você está lendo. Stencil + Web Components em light DOM, bilíngue PT/EN, pré-renderizado e ajustado pra ser achado por buscadores e por IA. Sucessor do V4, fiel à mesma identidade visual.
                 </p>
-                <ul c-id="11.155.4.1" class="proj-bul">
-                  <li c-id="11.156.5.0">
-                    <!--t.11.157.6.0-->
+                <ul c-id="11.215.4.1" class="proj-bul">
+                  <li c-id="11.216.5.0">
+                    <!--t.11.217.6.0-->
                     Stencil + Web Components em light DOM, CSS sem framework
                   </li>
-                  <li c-id="11.158.5.1">
-                    <!--t.11.159.6.0-->
+                  <li c-id="11.218.5.1">
+                    <!--t.11.219.6.0-->
                     Bilíngue PT/EN com i18n, hreflang e /en/ pré-renderizado
                   </li>
-                  <li c-id="11.160.5.2">
-                    <!--t.11.161.6.0-->
+                  <li c-id="11.220.5.2">
+                    <!--t.11.221.6.0-->
                     JSON-LD + OG + sitemap pra ser achado por busca e por IA
                   </li>
                 </ul>
-                <div c-id="11.162.4.2" class="proj-metrics">
-                  <div c-id="11.163.5.0" class="pm">
-                    <span c-id="11.164.6.0" class="pm-v">
-                      <!--t.11.165.7.0-->
+                <div c-id="11.222.4.2" class="proj-metrics">
+                  <div c-id="11.223.5.0" class="pm">
+                    <span c-id="11.224.6.0" class="pm-v">
+                      <!--t.11.225.7.0-->
                       2
                     </span>
-                    <span c-id="11.166.6.1" class="pm-l">
-                      <!--t.11.167.7.0-->
+                    <span c-id="11.226.6.1" class="pm-l">
+                      <!--t.11.227.7.0-->
                       idiomas
                     </span>
                   </div>
-                  <div c-id="11.168.5.1" class="pm">
-                    <span c-id="11.169.6.0" class="pm-v">
-                      <!--t.11.170.7.0-->
+                  <div c-id="11.228.5.1" class="pm">
+                    <span c-id="11.229.6.0" class="pm-v">
+                      <!--t.11.230.7.0-->
                       7
                     </span>
-                    <span c-id="11.171.6.1" class="pm-l">
-                      <!--t.11.172.7.0-->
+                    <span c-id="11.231.6.1" class="pm-l">
+                      <!--t.11.232.7.0-->
                       seções
                     </span>
                   </div>
-                  <div c-id="11.173.5.2" class="pm">
-                    <span c-id="11.174.6.0" class="pm-v">
-                      <!--t.11.175.7.0-->
+                  <div c-id="11.233.5.2" class="pm">
+                    <span c-id="11.234.6.0" class="pm-v">
+                      <!--t.11.235.7.0-->
                       0
                     </span>
-                    <span c-id="11.176.6.1" class="pm-l">
-                      <!--t.11.177.7.0-->
+                    <span c-id="11.236.6.1" class="pm-l">
+                      <!--t.11.237.7.0-->
                       frameworks CSS
                     </span>
                   </div>
                 </div>
               </div>
-              <div c-id="11.178.3.3" class="right">
-                <span c-id="11.179.4.0" class="chip">
-                  <!--t.11.180.5.0-->
+              <div c-id="11.238.3.3" class="right">
+                <span c-id="11.239.4.0" class="chip">
+                  <!--t.11.240.5.0-->
                   Stencil.js
                 </span>
-                <span c-id="11.181.4.1" class="chip">
-                  <!--t.11.182.5.0-->
+                <span c-id="11.241.4.1" class="chip">
+                  <!--t.11.242.5.0-->
                   Web Components
                 </span>
-                <span c-id="11.183.4.2" class="chip">
-                  <!--t.11.184.5.0-->
+                <span c-id="11.243.4.2" class="chip">
+                  <!--t.11.244.5.0-->
                   i18n
                 </span>
-                <span c-id="11.185.4.3" class="chip">
-                  <!--t.11.186.5.0-->
+                <span c-id="11.245.4.3" class="chip">
+                  <!--t.11.246.5.0-->
                   Prerender
                 </span>
-                <span c-id="11.187.4.4" class="chip">
-                  <!--t.11.188.5.0-->
+                <span c-id="11.247.4.4" class="chip">
+                  <!--t.11.248.5.0-->
                   JSON-LD
                 </span>
               </div>
             </div>
-            <div c-id="11.189.2.4" class="proj">
-              <div c-id="11.190.3.0" class="yr">
-                <!--t.11.191.4.0-->
+            <div c-id="11.249.2.5" class="proj">
+              <div c-id="11.250.3.0" class="yr">
+                <!--t.11.251.4.0-->
                 2025—
               </div>
-              <div c-id="11.192.3.1">
-                <div c-id="11.193.4.0" class="name">
-                  <!--t.11.194.5.0-->
+              <div c-id="11.252.3.1">
+                <div c-id="11.253.4.0" class="name">
+                  <!--t.11.254.5.0-->
                   QueryBoard
                 </div>
-                <div c-id="11.195.4.1" class="role">
-                  <!--t.11.196.5.0-->
+                <div c-id="11.255.4.1" class="role">
+                  <!--t.11.256.5.0-->
                   Criador · RAG local
                 </div>
               </div>
-              <div c-id="11.197.3.2" class="pitch">
-                <p c-id="11.198.4.0" class="pitch-lede">
-                  <!--t.11.199.5.0-->
+              <div c-id="11.257.3.2" class="pitch">
+                <p c-id="11.258.4.0" class="pitch-lede">
+                  <!--t.11.259.5.0-->
                   Busca e perguntas sobre os seus próprios documentos, rodando local. RAG de ponta a ponta: embeddings no Ollama, vetores no ChromaDB, orquestração com LangChain e metadados no Postgres.
                 </p>
-                <ul c-id="11.200.4.1" class="proj-bul">
-                  <li c-id="11.201.5.0">
-                    <!--t.11.202.6.0-->
+                <ul c-id="11.260.4.1" class="proj-bul">
+                  <li c-id="11.261.5.0">
+                    <!--t.11.262.6.0-->
                     Pipeline RAG completo: ingest → embed → buscar → responder
                   </li>
-                  <li c-id="11.203.5.1">
-                    <!--t.11.204.6.0-->
+                  <li c-id="11.263.5.1">
+                    <!--t.11.264.6.0-->
                     Ollama + ChromaDB local, sem nuvem dados não saem do PC
                   </li>
-                  <li c-id="11.205.5.2">
-                    <!--t.11.206.6.0-->
+                  <li c-id="11.265.5.2">
+                    <!--t.11.266.6.0-->
                     Orquestração LangChain + metadados no PostgreSQL
                   </li>
                 </ul>
               </div>
-              <div c-id="11.207.3.3" class="right">
-                <span c-id="11.208.4.0" class="chip">
-                  <!--t.11.209.5.0-->
+              <div c-id="11.267.3.3" class="right">
+                <span c-id="11.268.4.0" class="chip">
+                  <!--t.11.269.5.0-->
                   LangChain
                 </span>
-                <span c-id="11.210.4.1" class="chip">
-                  <!--t.11.211.5.0-->
+                <span c-id="11.270.4.1" class="chip">
+                  <!--t.11.271.5.0-->
                   ChromaDB
                 </span>
-                <span c-id="11.212.4.2" class="chip">
-                  <!--t.11.213.5.0-->
+                <span c-id="11.272.4.2" class="chip">
+                  <!--t.11.273.5.0-->
                   Ollama
                 </span>
-                <span c-id="11.214.4.3" class="chip">
-                  <!--t.11.215.5.0-->
+                <span c-id="11.274.4.3" class="chip">
+                  <!--t.11.275.5.0-->
                   PostgreSQL
                 </span>
-                <span c-id="11.216.4.4" class="chip">
-                  <!--t.11.217.5.0-->
+                <span c-id="11.276.4.4" class="chip">
+                  <!--t.11.277.5.0-->
                   Node
                 </span>
               </div>
             </div>
-            <div c-id="11.218.2.5" class="proj">
-              <div c-id="11.219.3.0" class="yr">
-                <!--t.11.220.4.0-->
+            <div c-id="11.278.2.6" class="proj">
+              <div c-id="11.279.3.0" class="yr">
+                <!--t.11.280.4.0-->
                 2025—
               </div>
-              <div c-id="11.221.3.1">
-                <div c-id="11.222.4.0" class="name">
-                  <!--t.11.223.5.0-->
+              <div c-id="11.281.3.1">
+                <div c-id="11.282.4.0" class="name">
+                  <!--t.11.283.5.0-->
                   Canal @RafaelMRDev
                 </div>
-                <div c-id="11.224.4.1" class="role">
-                  <!--t.11.225.5.0-->
+                <div c-id="11.284.4.1" class="role">
+                  <!--t.11.285.5.0-->
                   Criador · trilha Linux para Servidores
                 </div>
               </div>
-              <div c-id="11.226.3.2" class="pitch">
-                <p c-id="11.227.4.0" class="pitch-lede">
-                  <!--t.11.228.5.0-->
+              <div c-id="11.286.3.2" class="pitch">
+                <p c-id="11.287.4.0" class="pitch-lede">
+                  <!--t.11.288.5.0-->
                   Investindo em comunicação como diferencial. Foco: trilha de Linux para servidores, do zero até produção.
                 </p>
-                <ul c-id="11.229.4.1" class="proj-bul">
-                  <li c-id="11.230.5.0">
-                    <!--t.11.231.6.0-->
+                <ul c-id="11.289.4.1" class="proj-bul">
+                  <li c-id="11.290.5.0">
+                    <!--t.11.291.6.0-->
                     Trilha Linux Essencial p/ Servidores do zero à produção
                   </li>
-                  <li c-id="11.232.5.1">
-                    <!--t.11.233.6.0-->
+                  <li c-id="11.292.5.1">
+                    <!--t.11.293.6.0-->
                     Processo real acontecendo em tempo real, não slide estático
                   </li>
-                  <li c-id="11.234.5.2">
-                    <!--t.11.235.6.0-->
+                  <li c-id="11.294.5.2">
+                    <!--t.11.295.6.0-->
                     + 2 cursos avançados no roadmap (infra e automação)
                   </li>
                 </ul>
-                <div c-id="11.236.4.2" class="proj-metrics">
-                  <div c-id="11.237.5.0" class="pm">
-                    <span c-id="11.238.6.0" class="pm-v">
-                      <!--t.11.239.7.0-->
+                <div c-id="11.296.4.2" class="proj-metrics">
+                  <div c-id="11.297.5.0" class="pm">
+                    <span c-id="11.298.6.0" class="pm-v">
+                      <!--t.11.299.7.0-->
                       11
                     </span>
-                    <span c-id="11.240.6.1" class="pm-l">
-                      <!--t.11.241.7.0-->
+                    <span c-id="11.300.6.1" class="pm-l">
+                      <!--t.11.301.7.0-->
                       módulos na trilha
                     </span>
                   </div>
                 </div>
               </div>
-              <div c-id="11.242.3.3" class="right">
-                <span c-id="11.243.4.0" class="chip">
-                  <!--t.11.244.5.0-->
+              <div c-id="11.302.3.3" class="right">
+                <span c-id="11.303.4.0" class="chip">
+                  <!--t.11.304.5.0-->
                   OBS
                 </span>
-                <span c-id="11.245.4.1" class="chip">
-                  <!--t.11.246.5.0-->
+                <span c-id="11.305.4.1" class="chip">
+                  <!--t.11.306.5.0-->
                   Linux
                 </span>
-                <span c-id="11.247.4.2" class="chip">
-                  <!--t.11.248.5.0-->
+                <span c-id="11.307.4.2" class="chip">
+                  <!--t.11.308.5.0-->
                   Roteiro
                 </span>
-                <span c-id="11.249.4.3" class="chip">
-                  <!--t.11.250.5.0-->
+                <span c-id="11.309.4.3" class="chip">
+                  <!--t.11.310.5.0-->
                   Edição
                 </span>
               </div>
             </div>
-            <div c-id="11.251.2.6" class="proj">
-              <div c-id="11.252.3.0" class="yr">
-                <!--t.11.253.4.0-->
+            <div c-id="11.311.2.7" class="proj">
+              <div c-id="11.312.3.0" class="yr">
+                <!--t.11.313.4.0-->
                 Out/2023 · Jul/2024
               </div>
-              <div c-id="11.254.3.1">
-                <div c-id="11.255.4.0" class="name">
-                  <!--t.11.256.5.0-->
+              <div c-id="11.314.3.1">
+                <div c-id="11.315.4.0" class="name">
+                  <!--t.11.316.5.0-->
                   Igreja São Pedro V1 &amp; V2
                 </div>
-                <div c-id="11.257.4.1" class="role">
-                  <!--t.11.258.5.0-->
+                <div c-id="11.317.4.1" class="role">
+                  <!--t.11.318.5.0-->
                   Voluntário · solo
                 </div>
               </div>
-              <div c-id="11.259.3.2" class="pitch">
-                <p c-id="11.260.4.0" class="pitch-lede">
-                  <!--t.11.261.5.0-->
+              <div c-id="11.319.3.2" class="pitch">
+                <p c-id="11.320.4.0" class="pitch-lede">
+                  <!--t.11.321.5.0-->
                   Site institucional refeito do zero, depois um V2 quando o V1 envelheceu. Trabalho voluntário entregue, mantido, sem prazo de validade.
                 </p>
-                <ul c-id="11.262.4.1" class="proj-bul">
-                  <li c-id="11.263.5.0">
-                    <!--t.11.264.6.0-->
+                <ul c-id="11.322.4.1" class="proj-bul">
+                  <li c-id="11.323.5.0">
+                    <!--t.11.324.6.0-->
                     V1 institucional escrito do zero (Out/2023)
                   </li>
-                  <li c-id="11.265.5.1">
-                    <!--t.11.266.6.0-->
+                  <li c-id="11.325.5.1">
+                    <!--t.11.326.6.0-->
                     V2 refeito quando o V1 envelheceu (Jul/2024)
                   </li>
-                  <li c-id="11.267.5.2">
-                    <!--t.11.268.6.0-->
+                  <li c-id="11.327.5.2">
+                    <!--t.11.328.6.0-->
                     Voluntário, solo, no ar e mantido sem prazo
                   </li>
                 </ul>
               </div>
-              <div c-id="11.269.3.3" class="right">
-                <span c-id="11.270.4.0" class="chip">
-                  <!--t.11.271.5.0-->
+              <div c-id="11.329.3.3" class="right">
+                <span c-id="11.330.4.0" class="chip">
+                  <!--t.11.331.5.0-->
                   React
                 </span>
-                <span c-id="11.272.4.1" class="chip">
-                  <!--t.11.273.5.0-->
+                <span c-id="11.332.4.1" class="chip">
+                  <!--t.11.333.5.0-->
                   Node
                 </span>
-                <span c-id="11.274.4.2" class="chip">
-                  <!--t.11.275.5.0-->
+                <span c-id="11.334.4.2" class="chip">
+                  <!--t.11.335.5.0-->
                   PostgreSQL
                 </span>
               </div>
             </div>
-            <div c-id="11.276.2.7" class="proj">
-              <div c-id="11.277.3.0" class="yr">
-                <!--t.11.278.4.0-->
+            <div c-id="11.336.2.8" class="proj">
+              <div c-id="11.337.3.0" class="yr">
+                <!--t.11.338.4.0-->
                 Jul/2023—
               </div>
-              <div c-id="11.279.3.1">
-                <div c-id="11.280.4.0" class="name">
-                  <!--t.11.281.5.0-->
+              <div c-id="11.339.3.1">
+                <div c-id="11.340.4.0" class="name">
+                  <!--t.11.341.5.0-->
                   Babita · ecossistema interno
                 </div>
-                <div c-id="11.282.4.1" class="role">
-                  <!--t.11.283.5.0-->
+                <div c-id="11.342.4.1" class="role">
+                  <!--t.11.343.5.0-->
                   Full Stack Pleno
                 </div>
               </div>
-              <div c-id="11.284.3.2" class="pitch">
-                <p c-id="11.285.4.0" class="pitch-lede">
-                  <!--t.11.286.5.0-->
+              <div c-id="11.344.3.2" class="pitch">
+                <p c-id="11.345.4.0" class="pitch-lede">
+                  <!--t.11.346.5.0-->
                   Mantenho o ecossistema inteiro com equipe pequena: dev de novas features, servidores, redes, segurança, suporte. Não é um cargo, é um one-man-stack.
                 </p>
-                <ul c-id="11.287.4.1" class="proj-bul">
-                  <li c-id="11.288.5.0">
-                    <!--t.11.289.6.0-->
+                <ul c-id="11.347.4.1" class="proj-bul">
+                  <li c-id="11.348.5.0">
+                    <!--t.11.349.6.0-->
                     Backend + frontend de features novas, direto em produção
                   </li>
-                  <li c-id="11.290.5.1">
-                    <!--t.11.291.6.0-->
+                  <li c-id="11.350.5.1">
+                    <!--t.11.351.6.0-->
                     Servidores Linux, Nginx, deploy e uptime no meu colo
                   </li>
-                  <li c-id="11.292.5.2">
-                    <!--t.11.293.6.0-->
+                  <li c-id="11.352.5.2">
+                    <!--t.11.353.6.0-->
                     Rede, firewall, VPN e segurança a stack inteira
                   </li>
                 </ul>
               </div>
-              <div c-id="11.294.3.3" class="right">
-                <span c-id="11.295.4.0" class="chip">
-                  <!--t.11.296.5.0-->
+              <div c-id="11.354.3.3" class="right">
+                <span c-id="11.355.4.0" class="chip">
+                  <!--t.11.356.5.0-->
                   React
                 </span>
-                <span c-id="11.297.4.1" class="chip">
-                  <!--t.11.298.5.0-->
+                <span c-id="11.357.4.1" class="chip">
+                  <!--t.11.358.5.0-->
                   Node
                 </span>
-                <span c-id="11.299.4.2" class="chip">
-                  <!--t.11.300.5.0-->
+                <span c-id="11.359.4.2" class="chip">
+                  <!--t.11.360.5.0-->
                   PostgreSQL
                 </span>
-                <span c-id="11.301.4.3" class="chip">
-                  <!--t.11.302.5.0-->
+                <span c-id="11.361.4.3" class="chip">
+                  <!--t.11.362.5.0-->
                   Linux
                 </span>
-                <span c-id="11.303.4.4" class="chip">
-                  <!--t.11.304.5.0-->
+                <span c-id="11.363.4.4" class="chip">
+                  <!--t.11.364.5.0-->
                   Nginx
                 </span>
               </div>
@@ -1725,7 +1845,7 @@ target="_blank">
                 </div>
                 <div c-id="13.81.4.1" class="d">
                   <!--t.13.82.5.0-->
-                  Lanço o LEDGB — agente de dev autônomo, local-first — e o VisualInspector, 242 ferramentas que dão olhos, mãos e memória a uma IA. Publico o SaiBH e o Escritório Online, feitos estudando Claude Code, e o portfólio V5 que você está lendo.
+                  Lanço o LEDGB — agente de dev autônomo, local-first — e o VisualInspector, 242 ferramentas que dão olhos, mãos e memória a uma IA. Publico o SaiBH e o Escritório Online, feitos estudando Claude Code, ponho o AutoTrade em produção 24/7 num celular Android, e o portfólio V5 que você está lendo.
                 </div>
               </div>
             </div>
