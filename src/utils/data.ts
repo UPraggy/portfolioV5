@@ -132,6 +132,31 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    id: 'autotrade',
+    year: '2026—',
+    name: 'AutoTrade',
+    role: { pt: 'Criador · sistema em produção', en: 'Creator · production system' },
+    pitch: {
+      pt: 'Um celular Android reaproveitado como servidor: ele roda 24/7 dois motores de operação em cripto, painel próprio, bot de Telegram e uma IA conselheira. O interessante não é o bot, é tratar um smartphone como máquina ARM de borda e exigir dele o que se exige de um servidor: processo supervisionado, persistência auditável, testes rodando no próprio aparelho e uma tela que explica cada decisão.',
+      en: 'A repurposed Android phone as a server: it runs 24/7 two crypto trading engines, its own dashboard, a Telegram bot and an advisory AI. The interesting part isn\'t the bot, it\'s treating a smartphone as an edge ARM machine and demanding of it what you demand of a server: a supervised process, auditable persistence, tests running on the device itself and a screen that explains every decision.',
+    },
+    bullets: [
+      { pt: 'Android → Termux → Ubuntu em PRoot → Node 22 → PM2, com acesso externo por túnel e sem abrir porta no roteador', en: 'Android → Termux → Ubuntu on PRoot → Node 22 → PM2, external access over a tunnel with no router port opened' },
+      { pt: 'Dois motores isolados por desenho: config, banco e livro separados, e os números nunca se somam — sem essa fronteira não se sabe qual dos dois funciona', en: 'Two engines isolated by design: separate config, database and ledger, and the numbers never add up together — without that boundary you can\'t tell which one works' },
+      { pt: 'Observabilidade como requisito: a tela diz por que NÃO comprou, com o número medido ao lado do limite que barrou', en: 'Observability as a requirement: the screen says why it did NOT buy, with the measured number next to the limit that blocked it' },
+      { pt: 'Persistência antes de feature: SQLite em WAL, diário append-only que reconstrói o banco e reconciliação ordem a ordem com a corretora', en: 'Persistence before features: SQLite in WAL, an append-only journal that rebuilds the database and order-by-order reconciliation with the exchange' },
+      { pt: 'IA conselheira, não juiz: comenta cada compra, mas nunca aprova, reprova nem bloqueia, e falha ou timeout dela não afeta a operação', en: 'Advisory AI, not a judge: it comments on each buy but never approves, rejects or blocks, and its failure or timeout never affects the trade' },
+      { pt: 'Decisão de produto: toda mudança de parâmetro é medida contra o livro real antes de valer, e fica escrita ao lado do parâmetro', en: 'Product decision: every parameter change is measured against the real ledger before it counts, and the reason is written next to the parameter' },
+    ],
+    stack: ['Node 22', 'Express', 'SQLite (WAL)', 'PM2', 'Termux/PRoot', 'Telegram Bot', 'Cloudflare Tunnel'],
+    metrics: [
+      { v: '791', l: { pt: 'testes no próprio celular', en: 'tests on the phone itself' } },
+      { v: '2',   l: { pt: 'motores isolados', en: 'isolated engines' } },
+      { v: '15',  l: { pt: 'comandos no Telegram', en: 'Telegram commands' } },
+      { v: '24/7', l: { pt: 'em produção, ARM', en: 'in production, ARM' } },
+    ],
+  },
+  {
     id: 'queryboard',
     year: '2025—',
     name: 'QueryBoard',
@@ -277,7 +302,7 @@ export const TIMELINE: TimelineRow[] = [
   { y: 'Abr/2024', t: { pt: 'Portfólio V3 · React', en: 'Portfolio V3 · React' }, d: { pt: 'Refatorando a forma de me apresentar.', en: 'Refactoring how I present myself.' } },
   { y: 'Jul/2024', t: 'Igreja São Pedro V2', d: { pt: 'V1 estava velho. Refiz.', en: 'V1 had aged. Rebuilt it.' } },
   { y: '2025',     t: { pt: 'Portfólio V4 + Canal de YouTube', en: 'Portfolio V4 + YouTube channel' }, d: { pt: 'Stencil.js + Web Components. Início da trilha Linux Essencial para Servidores no YouTube.', en: 'Stencil.js + Web Components. Start of the Essential Linux for Servers track on YouTube.' } },
-  { y: '2026',     t: { pt: 'Onda de IA: LEDGB, VisualInspector + apps com Claude Code', en: 'AI wave: LEDGB, VisualInspector + apps with Claude Code' }, d: { pt: 'Lanço o LEDGB — agente de dev autônomo, local-first — e o VisualInspector, 242 ferramentas que dão olhos, mãos e memória a uma IA. Publico o SaiBH e o Escritório Online, feitos estudando Claude Code, e o portfólio V5 que você está lendo.', en: 'Launching LEDGB — an autonomous, local-first dev agent — and VisualInspector, 242 tools that give an AI eyes, hands and memory. Shipping SaiBH and Escritório Online, built while learning Claude Code, and the V5 portfolio you\'re reading.' } },
+  { y: '2026',     t: { pt: 'Onda de IA: LEDGB, VisualInspector + apps com Claude Code', en: 'AI wave: LEDGB, VisualInspector + apps with Claude Code' }, d: { pt: 'Lanço o LEDGB — agente de dev autônomo, local-first — e o VisualInspector, 242 ferramentas que dão olhos, mãos e memória a uma IA. Publico o SaiBH e o Escritório Online, feitos estudando Claude Code, ponho o AutoTrade em produção 24/7 num celular Android, e o portfólio V5 que você está lendo.', en: 'Launching LEDGB — an autonomous, local-first dev agent — and VisualInspector, 242 tools that give an AI eyes, hands and memory. Shipping SaiBH and Escritório Online, built while learning Claude Code, putting AutoTrade into 24/7 production on an Android phone, and the V5 portfolio you\'re reading.' } },
 ];
 
 export const PRINCIPLES: Principle[] = [
@@ -398,7 +423,7 @@ export const T = {
   projects: {
     num:   { pt: '04 / PROJETOS', en: '04 / PROJECTS' } as Str,
     title: { pt: 'O que <em>eu</em> mantenho.', en: 'What <em>I</em> maintain.' } as Str,
-    sub:   { pt: 'Produtos meus  LEDGB, VisualInspector, QueryBoard, SaiBH, Escritório Online  mais o ecossistema da Babita e o trabalho voluntário. Cada um resolve uma coisa diferente, e juntos cobrem dev, infra, design e comunicação.', en: 'My own products  LEDGB, VisualInspector, QueryBoard, SaiBH, Escritório Online  plus the Babita ecosystem and volunteer work. Each one solves something different, and together they cover dev, infra, design and communication.' } as Str,
+    sub:   { pt: 'Produtos meus  LEDGB, VisualInspector, AutoTrade, QueryBoard, SaiBH, Escritório Online  mais o ecossistema da Babita e o trabalho voluntário. Cada um resolve uma coisa diferente, e juntos cobrem dev, infra, design e comunicação.', en: 'My own products  LEDGB, VisualInspector, AutoTrade, QueryBoard, SaiBH, Escritório Online  plus the Babita ecosystem and volunteer work. Each one solves something different, and together they cover dev, infra, design and communication.' } as Str,
   },
   trajectory: {
     num:   { pt: '05 / TRAJETÓRIA', en: '05 / TRAJECTORY' } as Str,

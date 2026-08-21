@@ -1,8 +1,8 @@
 # Rafael Moreira Ramos de Rezende
 
 > Full Stack Developer e Sysadmin baseado em Belo Horizonte (BR). Quatro pilares:
-> Design, Dev, Infra e Comunicacao. Criador do LEDGB Orchestrator, do VisualInspector
-> e do QueryBoard. Trabalha com Stencil, Node.js, React, Linux e RAG. Portfolio
+> Design, Dev, Infra e Comunicacao. Criador do LEDGB Orchestrator, do VisualInspector,
+> do AutoTrade e do QueryBoard. Trabalha com Stencil, Node.js, React, Linux e RAG. Portfolio
 > bilingue (PT/EN).
 
 ## Quem e
@@ -20,6 +20,15 @@
   maos pra operar o computador e memoria que nao estoura o contexto. MCP + REST
   (POST /api/tool/:name) + Electron sobre um unico motor. Audita interfaces, gera
   documentos nativos (.pptx/PDF/imagem/grafico) e controla navegador e sistema.
+- AutoTrade: sistema de automacao rodando 24/7 num celular Android tratado como servidor
+  ARM de borda (Termux + Ubuntu em PRoot + Node 22 + PM2). Dois motores de operacao em
+  cripto isolados por desenho (config, banco e livro separados), painel proprio que explica
+  cada decisao com o numero medido ao lado do limite, bot de Telegram com 15 comandos, IA
+  conselheira que nunca bloqueia a operacao, e 791 testes rodando no proprio aparelho.
+- SaiBH: biblioteca de lugares para sair em Belo Horizonte e regiao metropolitana, com
+  sugestao pelo clima ao vivo e filtros pessoais. Feito a dois, estudando Claude Code.
+- Escritorio Online: PWA de inclusao digital com onboarding que se adapta a idade e ao
+  momento de vida. Feito estudando Claude Code.
 - QueryBoard: RAG local de ponta a ponta  embeddings no Ollama, vetores no ChromaDB,
   orquestracao com LangChain e metadados no PostgreSQL. Dados nao saem do PC.
 
